@@ -1,37 +1,85 @@
 <article class="lab" data-lab="1.2">
-  <div class="box goal">
-    <h3>الهدف</h3>
-    <p>REPLACE: في النهاية يستطيع المشاركون …</p>
-  </div>
-
-  <h2>ما تحتاجه</h2>
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
   <ul>
-    <li>REPLACE: الملفات والأداة والحساب التي يستخدمها المختبر</li>
+    <li>دليل تشغيل على القالب، لكل خطوة فيه أمر ونتيجة متوقعة وطريقة تحقق، وكل خطوة جُرّبت.</li>
+    <li>خطة تراجع جُرّبت هي أيضًا، ونقطة موافقة باسم صاحبها.</li>
+    <li>سجل التشغيل <code>run_log.txt</code> من النسخة المؤقتة التي اختبرت فيها دليلك.</li>
   </ul>
+</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الأولى <span class="min">15 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-    <div class="prompt" data-tool="أداة تشغيل النماذج محليًا">REPLACE: الأمر الذي ينسخه المشاركون، والأجزاء التي يغيّرونها <span class="ph">ملوّنة</span></div>
-  </div>
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/incident/INC-2291.md" target="_blank"><b>incident/INC-2291.md</b><span>تذكرة الحادثة المغلقة: ما حدث، وما يجب ألا يُمس، والأدوات في النسخة المؤقتة.</span></a>
+  <a href="files/incident/sahir_runbook_draft.md" target="_blank"><b>incident/sahir_runbook_draft.md</b><span>مسودة دليل التشغيل من «ساهر»: مخرج مسجَّل.</span></a>
+  <a href="files/incident/runbook_template.md" download><b>incident/runbook_template.md</b><span>قالب الدليل الذي تكتب عليه.</span></a>
+  <a href="files/kit/make_sandbox.sh" download><b>kit/make_sandbox.sh</b><span>يبني نسخة مؤقتة من خادم الحجوزات في حالة الحادثة: القرص ممتلئ والخدمة متوقفة.</span></a>
+  <a href="files/kit/sandbox_env.sh" download><b>kit/sandbox_env.sh</b><span>يدخلك النسخة ويعرّف الأمر <code>step</code> الذي يشغّل خطوة ويكتبها في سجل التشغيل.</span></a>
+</div>
+<p class="small">سياسة الذكاء الاصطناعي: <b>المساعد كاملًا</b>، ولا أمر مولَّد يُشغَّل خارج النسخة المؤقتة. الأوامر من مجلد <code>labs</code> في طرفية <span class="en">bash</span>. كل الملفات اصطناعية.</p>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الثانية <span class="min">10 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-  </div>
+<h2>الخطوات</h2>
 
-  <div class="step stretch">
-    <h3>✱ إضافي</h3>
-    <p>REPLACE: توسعة لمن ينهي مبكرًا</p>
-  </div>
+<div class="step">
+  <h3>1 · اقرأ التذكرة والمسودة واكتب أين تتوقع أن تفشل <span class="min">6 دقائق</span></h3>
+  <p>اقرأ قسم «ما يجب ألا يُمس» في التذكرة، ثم خطوات المسودة الخمس. اكتب بجانب كل خطوة توقعك: تنجح، أو تفشل، أو تنجح وتضر. لا تشغّل شيئًا بعد.</p>
+</div>
 
-  <h2>أسئلة تحقق</h2>
-  <ol class="checks">
-    <li>REPLACE: سؤال يبيّن أن المختبر نجح</li>
-  </ol>
+<div class="step">
+  <h3>2 · ابنِ نسخة مؤقتة وشغّل خطوات المسودة واحدة واحدة <span class="min">12 دقيقة</span></h3>
+  <p>كل نسخة مجلد مؤقت جديد خارج المقرر. الأمر <code>step</code> يشغّل الخطوة من جذر النسخة ويكتب الأمر ومخرجه ورمز خروجه في <code>run_log.txt</code>.</p>
+  <pre class="code"><code>SB="$(bash files/kit/make_sandbox.sh)"
+source files/kit/sandbox_env.sh "$SB"
+dfree
+step D1 'du -sh --top 5 srv/pms/logs'
+step D2 'svcctl start pms-app'</code></pre>
+  <p>أكمل خطوات المسودة D3 وD4 وD5 بالطريقة نفسها، منسوخة من المسودة كما هي. بعد كل خطوة اقرأ رمز الخروج و<code>dfree</code> و<code>ls srv/pms/logs</code>، وقارن بتوقعك.</p>
+  <div class="callout warn"><b>هنا يجوز أن تفسد كل شيء.</b> هذا سبب النسخة المؤقتة. ما يحدث فيها لا يمس خادمًا ولا ملفًا في المقرر.</div>
+</div>
 
-  <details class="instructor">
-    <summary>للمدرّب</summary>
-    <p>REPLACE: مفتاح الإجابة والفخاخ والأخطاء الشائعة</p>
-  </details>
+<div class="step">
+  <h3>3 · اكتب دليلك على القالب: النسخة الاحتياطية ثم تحرير المساحة ثم التشغيل <span class="min">14 دقيقة</span></h3>
+  <p>انسخ <code>runbook_template.md</code> إلى مجلد عملك واكتب خطواتك. الترتيب: اعرف الحالة، ثم خذ نسخة احتياطية من الإعداد وبصمة سجل التدقيق، ثم حرّر المساحة دون أن تحذف ما يجب ألا يُمس، ثم أعد مستوى السجلات، ثم شغّل. يمكنك أن تطلب من المساعد مراجعة دليلك:</p>
+  <div class="prompt" data-tool="مساعد عام الأغراض">هذا دليل تشغيل كتبته لحالة امتلاء قرص السجلات، وهذه قيود التذكرة: <span class="ph">قسم «ما يجب ألا يُمس»</span>. لا تكتب دليلًا جديدًا. لكل خطوة من خطواتي قل: هل تمس ملفًا من القيود؟ هل يعتمد نجاحها على خطوة قبلها؟ وما الأمر الذي يثبت أنها نجحت؟ الدليل: <span class="ph">خطواتك</span></div>
+  <p class="small">إن اقترح المساعد خيارًا لأمر لا تعرفه، فهو خطوة لم تُختبر بعد. للبحث عن أكبر الملفات: <code>du -ak srv/pms/logs | sort -rn | head -6</code>.</p>
+</div>
+
+<div class="step">
+  <h3>4 · شغّل دليلك في نسخة جديدة وأضف خطوة التحقق <span class="min">10 دقائق</span></h3>
+  <p>نسخة جديدة، لا النسخة التي أفسدتها المسودة. شغّل كل خطوة بالأمر <code>step</code> ورقمها في دليلك.</p>
+  <pre class="code"><code>SB="$(bash files/kit/make_sandbox.sh)"
+source files/kit/sandbox_env.sh "$SB"
+step 1 'dfree'</code></pre>
+  <p>آخر خطوة تتحقق ولا تفترض: الخدمة تعمل، وبصمة سجل التدقيق لم تتغير، والقرص تحت 80%.</p>
+  <pre class="code"><code>cksum &lt; srv/pms/logs/audit.log | diff - srv/backup/audit.cksum</code></pre>
+</div>
+
+<div class="step">
+  <h3>5 · جرّب التراجع وسلّم الدليل وسجل التشغيل <span class="min">8 دقائق</span></h3>
+  <p>تراجع لم يُجرَّب ليس تراجعًا. أوقف الخدمة وأعد الإعداد والسجلات كما كانت بخطوتين <code>R1</code> و<code>R2</code>، ثم تحقق أن مستوى السجلات عاد <code>debug</code>. اكتب في الدليل نقطة الموافقة: من يعتمد تشغيله على خادم الإنتاج، وما يقرؤه قبل أن يعتمد. ثم انسخ <code>"$SB/run_log.txt"</code> إلى مجلد عملك.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ مهمة إضافية</h3>
+  <p>إن قدّم المدرّب حاوية (<span class="en">Podman</span> أو <span class="en">Docker</span>) أو آلة افتراضية بلقطة حفظ، فشغّل الدليل نفسه فيها وقارن سجلَّي التشغيل: هل تصرّفت خطوة بطريقة مختلفة؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم صار استخدام القرص بعد حذف المسودة، ولماذا رفضت الخدمة أن تبدأ بعده؟</li>
+  <li>أي خيار في المسودة لا وجود له، وكيف عرفت ذلك من سجل التشغيل لا من ذاكرتك؟</li>
+  <li>ما الخطوة في دليلك التي تثبت أن سجل التدقيق لم يتغير؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الحل: <code>labs/solutions/D1_2.sh</code> (يطبع <code>PASS lab 1.2</code>) والدليل المرجعي <code>labs/solutions/runbook_reference.md</code>. الحل يقرأ خطوات المسودة من ملفها نفسه.</li>
+    <li>أخطاء المسودة الخمسة: <code>du --top</code> خيار مختلَق فيفشل الأمر؛ التشغيل قبل تحرير المساحة يفشل (القرص 94%)؛ <code>rm -f srv/pms/logs/*.log</code> يحذف سجل التدقيق والسجل الحالي ولا ينزل بالقرص إلا إلى 85% لأن الكبيرة هي المدوَّرة؛ لا تحقق؛ لا نسخة احتياطية ولا تراجع. بعدها ترفض الخدمة البدء لأن سجل التدقيق مفقود.</li>
+    <li>الدليل المرجعي ثماني خطوات: ضغط السجلات المدوَّرة ينزل بالقرص من 94% إلى 9%. الخطوة 2 (<code>svcctl status</code>) رمز خروجها 1 لأن الخدمة متوقفة: هذا متوقع، ويظهر في سجل التشغيل خطوة «فاشلة» واحدة. نبّه المشاركين ألا يعدّوه خطأ في دليلهم.</li>
+    <li>من يكتب <code>sed -i</code> يعمل، والمرجع يكتب إلى ملف جديد ثم ينقله ليبقى الأصل في النسخة الاحتياطية. كلاهما مقبول ما دامت النسخة الاحتياطية قبله.</li>
+    <li>الأمر <code>step</code> وأداتا النسخة <code>dfree</code> و<code>svcctl</code> برامج نصية صغيرة في <code>kit/</code> تحاكي الخادم: لا خدمة حقيقية ولا قرص حقيقي. جُرّبت في <span class="en">Git Bash</span> على <span class="en">Windows</span>. طريق الحاوية في المهمة الإضافية لم يُشغَّل في بناء المقرر.</li>
+    <li>مسودة «ساهر» مكتوبة باليد، والأمر المكتوب في الخطوة 3 لم يُجرَّب على نموذج في بناء المقرر.</li>
+  </ul>
+</details>
 </article>
