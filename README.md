@@ -47,7 +47,7 @@ AI for Security and IT Operations Staff
 |---|---|---|---|
 | 1.1 | اليوم 1 · الجلسة 1 | فرز عشرين تنبيهًا بعد حجبها | [`D1_1_triage.html`](labs/D1_1_triage.html) |
 | 1.2 | اليوم 1 · الجلسة 2 | اختبار دليل تشغيل صاغه المساعد | [`D1_2_runbook.html`](labs/D1_2_runbook.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | مراجعة أربعة برامج نصية وتشغيلها جافًا | [`D2_1_scripts.html`](labs/D2_1_scripts.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | مراجعة أربعة برامج نصية وفحصها آليًا وتشغيلها جافًا | [`D2_1_scripts.html`](labs/D2_1_scripts.html) |
 | 2.2 | اليوم 2 · الجلسة 2 | فحص الرسائل والنسخ المستنسخة | [`D2_2_messages.html`](labs/D2_2_messages.html) |
 <!-- /academy:labs -->
 
@@ -96,7 +96,7 @@ AI for Security and IT Operations Staff
 - [ShellCheck wiki: SC2086](https://www.shellcheck.net/wiki/SC2086)
 - [ShellCheck wiki: SC2115](https://www.shellcheck.net/wiki/SC2115)
 - [ShellCheck (المستودع)](https://github.com/koalaman/shellcheck)
-- [GNU Bash Reference Manual: The Set Builtin](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
+- [Bash Reference Manual (the maintainer's copy): The Set Builtin](https://tiswww.case.edu/php/chet/bash/bashref.html#The-Set-Builtin)
 - [PSScriptAnalyzer (المستودع)](https://github.com/PowerShell/PSScriptAnalyzer)
 - [jq](https://jqlang.org/)
 - [OpenSearch](https://opensearch.org/)
@@ -122,10 +122,12 @@ AI for Security and IT Operations Staff
 |---|---|
 | 1.1 فرز عشرين تنبيهًا بعد حجبها | المساعد كاملًا، على المواد المنقَّحة وحدها، ولكل حكم سطر في الحدث الخام |
 | 1.2 اختبار دليل تشغيل صاغه المساعد | المساعد كاملًا، ولا أمر يُشغَّل خارج النسخة المؤقتة |
-| 2.1 مراجعة أربعة برامج نصية وتشغيلها جافًا | المساعد معلّم: يشرح الأوامر ولا يحكم على البرامج |
+| 2.1 مراجعة أربعة برامج نصية وفحصها آليًا وتشغيلها جافًا | المساعد معلّم: يشرح الأوامر ولا يحكم على البرامج |
 | 2.2 فحص الرسائل والنسخ المستنسخة | المساعد كاملًا، والتحقق بقناة من الدليل |
 
 لا يُنزَّل أي نموذج على أجهزة المشاركين: أدوات تشغيل النماذج محليًا تُشرح ولا تُشغَّل. المكالمة المستنسخة ومقطع الفيديو نص وسجل وبطاقة، ولا ملف صوتي ولا ملف فيديو في المقرر.
+
+**ما يحتاجه المشارك على جهازه:** طرفية `bash` (على Windows طرفية Git Bash، وعلى macOS وLinux الطرفية المعتادة)، وShellCheck مثبتًا أو أداة `uv` لتشغيله دون تثبيت. يُجرَّب ذلك في أول الورشة بثلاثة أوامر على شريحة التجهيز. **إن تعذّرت الطرفية:** يعمل المشارك مع زميل على جهاز واحد، ويقرأ الملفات في المتصفح من صفحات المختبرات ويبحث فيها بالبحث في الصفحة؛ وفي مختبر البرامج النصية يلصق البرامج في موقع shellcheck.net، فهي اصطناعية لا سر فيها، ويقرأ مخرج التشغيل الجاف من شاشة زميله. المختبرات الأربعة تُنجز بهذا الطريق، وإن كانت أبطأ.
 
 ## العمل التحضيري
 

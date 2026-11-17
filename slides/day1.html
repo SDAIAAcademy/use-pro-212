@@ -126,7 +126,7 @@ bash files/kit/scan_secrets.sh files/reference/directory.csv</code></pre>
     <div class="stat center"><div class="big">5.2%</div><div class="lbl">على الأقل من الحزم البرمجية التي ذكرتها النماذج التجارية في 576,000 عينة لا وجود لها، و21.7% في النماذج المفتوحة</div></div>
   </div>
   <div class="callout tip mt"><b>القاعدة:</b> كل حقل يستند إليه حكم، وكل خيار في أمر، تبحث عنه قبل أن تصدّقه: <code>grep</code> في السجل، و<code>--help</code> في الأداة.</div>
-  <aside class="notes"><p>الحكم الصحيح بسبب مختلق خطأ مؤجل: لو جاء غدًا تنبيه مشابه بلا الحقل المختلَق لقال المساعد إنه حميد. الرقم من دراسة عن أسماء الحزم المختلَقة في الشيفرة المولَّدة: هو عن الحزم لا عن خيارات الأوامر، لكنه يقيس الظاهرة نفسها. في المختبرين اليوم حقل مختلَق وخيار مختلَق: لا تقل أين.</p><p>Sources: Spracklen et al., We Have a Package for You! (2024).</p></aside>
+  <aside class="notes"><p>الحكم الصحيح بسبب مختلق خطأ مؤجل: لو جاء غدًا تنبيه مشابه بلا الحقل المختلَق لقال المساعد إنه حميد. الرقم من دراسة عن أسماء الحزم المختلَقة في الشيفرة المولَّدة: هو عن الحزم لا عن خيارات الأوامر، لكنه يقيس الظاهرة نفسها. في المختبرين اليوم حقل مختلَق وخيار مختلَق: لا تقل أين.</p><p>المصادر: <span class="en">Spracklen et al., We Have a Package for You! (2024)</span>.</p></aside>
 </section>
 
 <section class="slide" id="where-secrets-hide" data-lo="LO1">
@@ -192,11 +192,11 @@ bash files/kit/scan_secrets.sh files/reference/directory.csv</code></pre>
   <h2>الحكم الذي لا تستطيع أن تشير إلى سطره لم يُتحقق منه بعد</h2>
   <table class="t small">
     <tr><th>التنبيه</th><th>الحكم</th><th>ملف الحدث</th><th class="num">السطر</th><th>ما يقوله السطر</th></tr>
-    <tr><td>A-01</td><td>TP</td><td><code>auth.log</code></td><td class="num">184</td><td>دخول ناجح للحساب u2207 من جهاز جديد بعد 14 إخفاقًا من العنوان نفسه</td></tr>
-    <tr><td>A-16</td><td>BN</td><td><code>auth.log</code></td><td class="num">37</td><td>دخول u1555 بتحقق ثنائي، وهو في الوردية الليلية في جدول الورديات</td></tr>
+    <tr><td>B-03</td><td>TP</td><td><code>auth.log</code></td><td class="num">412</td><td>دخول ناجح لحساب موظف من جهاز جديد بعد سلسلة إخفاقات من العنوان نفسه</td></tr>
+    <tr><td>B-09</td><td>BN</td><td><code>auth.log</code></td><td class="num">88</td><td>دخول ليلي بتحقق ثنائي لموظفة، وجدول الورديات يضعها في الوردية الليلية</td></tr>
   </table>
   <div class="callout tip mt"><b>ورقة الفرز:</b> الحكم، وملف الحدث، ورقم السطر، وما يقوله السطر. الرقم يعيدك ويعيد زميلك إلى الدليل نفسه بأمر <code>grep -n</code>.</div>
-  <aside class="notes"><p>الصفان من الورقة المرجعية للمختبر 1.1، وكلاهما من أحكام «ساهر» الصحيحة: المثال هنا للصيغة لا للخطأ. الدليل في الأحداث الخام لا في التنبيه: التنبيه رأي نظام المراقبة، والحدث ما حدث. وفي A-16 سطران: سطر الدخول، وسطر في جدول الورديات يجعل الدخول الليلي متوقعًا.</p></aside>
+  <aside class="notes"><p>الصفان مثال للصيغة من ليلة أخرى، ليسا من تنبيهات المختبر 1.1 ولا من ورقته المرجعية. الدليل في الأحداث الخام لا في التنبيه: التنبيه رأي نظام المراقبة، والحدث ما حدث. وفي الصف الثاني سطران: سطر الدخول، وسطر في جدول الورديات يجعل الدخول الليلي متوقعًا.</p></aside>
 </section>
 
 <section class="slide" id="instruction-in-a-field" data-lo="LO1">
@@ -208,7 +208,7 @@ bash files/kit/scan_secrets.sh files/reference/directory.csv</code></pre>
     <div class="ev final"><b>المحلل</b>اسم المستخدم حقل يكتبه أي طرف خارجي. لا اختبار في تقويم التغييرات.</div>
   </div>
   <div class="callout note mt"><b>الحقن غير المباشر:</b> محتوى من مصدر خارجي يغيّر سلوك النموذج، لأن النموذج لا يفرّق بين بيانات يقرؤها وتعليمات يُعطاها.</div>
-  <aside class="notes"><p>مثال مكتوب للشريحة، ليس من ملفات المختبر. في المختبر 1.1 تعليمة من هذا النوع في أحد الأحداث الخام: لا تقل أين. التعريف من <span class="en">OWASP</span>، والبحث الذي وصف الحقن غير المباشر في التطبيقات المدمجة بالنماذج من 2023.</p><p>Sources: OWASP LLM01:2025 Prompt Injection; Greshake et al. (2023).</p></aside>
+  <aside class="notes"><p>مثال مكتوب للشريحة، ليس من ملفات المختبر. في المختبر 1.1 تعليمة من هذا النوع في أحد الأحداث الخام: لا تقل أين. التعريف من <span class="en">OWASP</span>، والبحث الذي وصف الحقن غير المباشر في التطبيقات المدمجة بالنماذج من 2023.</p><p>المصادر: <span class="en">OWASP LLM01:2025 Prompt Injection</span>، و<span class="en">Greshake et al. (2023)</span>.</p></aside>
 </section>
 
 <section class="slide" id="where-instructions-hide" data-lo="LO1">
@@ -231,7 +231,7 @@ bash files/kit/scan_secrets.sh files/reference/directory.csv</code></pre>
     <div class="card c-coral"><h4>لا يُسمح</h4><ul class="bullets tight"><li>أن يغلق تنبيهًا أو يغيّر حكمًا</li><li>أن يشغّل أمرًا على نظام</li><li>أن يعامل نص السجل كأنه أمر</li></ul></div>
   </div>
   <div class="callout tip mt"><b>المركز الوطني للأمن السيبراني البريطاني:</b> النماذج «قابلة للخداع بطبيعتها»، فالمطلوب تقليل الأثر لا انتظار علاج كامل.</div>
-  <aside class="notes"><p>العبارة من مقالة المركز الوطني للأمن السيبراني في المملكة المتحدة: الحقن ليس كحقن الاستعلامات، لأن النموذج لا يفصل البيانات عن التعليمات. لذلك الضابط هو صلاحية المساعد وسطر الدليل الذي يراجعه إنسان. في المختبر يكتب المشارك سطرًا بما لا يُسمح لـ«ساهر» أن يفعله وحده.</p><p>Sources: NCSC, Prompt injection is not SQL injection (it may be worse).</p></aside>
+  <aside class="notes"><p>العبارة من مقالة المركز الوطني للأمن السيبراني في المملكة المتحدة: الحقن ليس كحقن الاستعلامات، لأن النموذج لا يفصل البيانات عن التعليمات. لذلك الضابط هو صلاحية المساعد وسطر الدليل الذي يراجعه إنسان. في المختبر يكتب المشارك سطرًا بما لا يُسمح لـ«ساهر» أن يفعله وحده.</p><p>المصادر: <span class="en">NCSC, Prompt injection is not SQL injection (it may be worse)</span>.</p></aside>
 </section>
 
 <section class="slide" id="check-injection" data-lo="LO1">

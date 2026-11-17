@@ -185,7 +185,7 @@
           "minutes": 105,
           "lab": {
             "id": "2.1",
-            "title": "مراجعة أربعة برامج نصية وتشغيلها جافًا",
+            "title": "مراجعة أربعة برامج نصية وفحصها آليًا وتشغيلها جافًا",
             "summary": "المساعد معلّم يشرح الأوامر ولا يحكم على البرامج: تقرأ أربعة برامج نصية ولّدها المساعد لإدارة خوادم المجموعة، وتشغّل عليها الفحص الساكن، ثم التشغيل الجاف في نسخة مؤقتة، وتخرج بسجل مراجعة وببرنامج مصحَّح يجتاز الفحص والتشغيل الجاف.",
             "minutes": 50,
             "href": "D2_1_scripts.html",
@@ -417,8 +417,8 @@
           "url": "https://github.com/koalaman/shellcheck"
         },
         {
-          "title": "GNU Bash Reference Manual: The Set Builtin",
-          "url": "https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html"
+          "title": "Bash Reference Manual (the maintainer's copy): The Set Builtin",
+          "url": "https://tiswww.case.edu/php/chet/bash/bashref.html#The-Set-Builtin"
         },
         {
           "title": "PSScriptAnalyzer (المستودع)",
