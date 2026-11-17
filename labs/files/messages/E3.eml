@@ -1,0 +1,25 @@
+Return-Path: <billing@fastmail-relay.example>
+Received: from relay7.fastmail-relay.example (198.51.100.201) by mx-01.surahotels.example with ESMTP; Tue, 10 Nov 2026 10:21:17 +0300
+Authentication-Results: mx-01.surahotels.example; spf=fail smtp.mailfrom=fastmail-relay.example; dkim=none; dmarc=fail header.from=rawabi-linen.example
+From: "Rawabi Linen Accounts" <accounts@rawabi-linen.example>
+Reply-To: accounts@rawabi-linen-finance.example
+To: payables@surahotels.example
+Cc: servicedesk@surahotels.example
+Subject: تحديث بيانات الحساب البنكي قبل دفعة نوفمبر
+Date: Tue, 10 Nov 2026 10:21:09 +0300
+Message-ID: <a81c.20261110@fastmail-relay.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+السادة إدارة الحسابات الدائنة في مجموعة سُرى للفنادق،
+
+السلام عليكم ورحمة الله وبركاته،
+
+نفيدكم بأن شركة روابي للمفروشات الفندقية نقلت حسابها البنكي إلى مصرف جديد ابتداءً من هذا الشهر، إثر مراجعة داخلية. نرجو تحديث بيانات المورد لديكم قبل صرف دفعة نوفمبر، وتحويل المستحقات إلى الحساب الجديد المبيَّن في الخطاب المرفق.
+
+ونرجو كذلك من مكتب الخدمة تحديث عنوان البريد المعتمد للمورد في بوابة الموردين إلى عنوان الرد على هذه الرسالة.
+
+للاستفسار يسعدنا تواصلكم على الرقم +966 11 000 0199.
+
+وتقبلوا وافر التحية،
+قسم الحسابات، روابي للمفروشات الفندقية

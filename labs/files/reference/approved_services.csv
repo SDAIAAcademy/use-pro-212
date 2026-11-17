@@ -1,0 +1,6 @@
+host,service,owner_in_sura
+nuzul-systems.example,Nuzul Systems: booking system vendor (mail and support),IT operations
+share.wasl-media.example,Wasl Media: marketing agency file share,Marketing
+telemetry.bms-cloud.example,Building management telemetry,Engineering
+safar-travel.example,Safar Travel: agency sending group bookings,Reservations
+rawabi-linen.example,Rawabi Linen: laundry supplier (invoices),Finance

@@ -1,0 +1,4 @@
+network,owner,note
+10.20.0.0/16,Sura Hotels Group,internal addresses of the nine hotels and the head office
+198.51.100.24,Sura Hotels Group,VPN egress of the Riyadh data centre
+192.0.2.40,Rihla Rates (partner),the only address the rates partner calls the API from

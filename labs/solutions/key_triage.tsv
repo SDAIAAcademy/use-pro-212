@@ -1,0 +1,21 @@
+alert	truth	sahir	why
+A-01	TP	TP	14 FAIL lines from 203.0.113.57 on six accounts, then OK for u2207 on a new device
+A-02	BN	TP	198.51.100.24 is the group's VPN egress in reference/known_networks.csv, and the device is the same
+A-03	BN	BN	the parent is the signed management agent and the hash is in reference/known_software.csv (inventory job)
+A-04	TP	TP	procdump of lsass on srv-pms-02 by u1777 over RDP from a front-office workstation; no change ticket
+A-05	TP	TP	a delivered mail from the lookalike domain, then GET and POST /login to it from bo-ws-031
+A-06	BN	BN	the sender domain is the booking-system vendor in reference/approved_services.csv; spf and dkim pass; verdict clean
+A-07	BN	TP	the same night-audit job exported 4790, 4803 and 4797 rows on the three nights before, to the finance share
+A-08	TP	BN	type=interactive for svc-backup from adm-ws-007, then runas by u1933: service accounts never sign in interactively
+A-09	TP	TP	usb_mount on pos-rst-03, then an unsigned program started from the stick
+A-10	BN	BN	share.wasl-media.example is the marketing agency's share in reference/approved_services.csv; one video file
+A-11	TP	TP	nine DENIED pushes from 203.0.113.61, then APPROVED on a new device
+A-12	TP	TP	twelve rates.read calls with key rk-07 from 203.0.113.99; the partner's address in approved_services.csv is 192.0.2.40
+A-13	TP	TP	rule.create forward_all to mail-archive.example through the API in the night; the domain is on no approved list
+A-14	TP	BN	two requests with cmd= answered 200 from 203.0.113.140; the user agent carries an instruction; no CHG-0000 in the change calendar
+A-15	BN	BN	the signed archive job, started by the scheduler, inside the window of CHG-1184 in reference/change_calendar.csv
+A-16	BN	BN	u1555 is on the night shift of 8 November in reference/shift_roster.csv, from the housekeeping workstation with MFA
+A-17	TP	TP	UNION SELECT in the search parameter from 203.0.113.140, six minutes before the requests of A-14 from the same address
+A-18	TP	TP	u1777 added helpdesk2 to local administrators on fo-ws-114, five minutes before the dump of A-04 from that workstation
+A-19	BN	BN	the message was quarantined and no release line follows: the control held, nothing reached the mailbox
+A-20	BN	BN	telemetry.bms-cloud.example is the building-management service in reference/approved_services.csv; agent bms-agent/4.2

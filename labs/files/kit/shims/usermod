@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Stand-in for usermod inside the sandbox: it changes no account, it records the call.
+SB="$(cd "$(dirname "$0")/.." && pwd)"
+echo "usermod $*" >> "$SB/calls.log"
+echo "WOULD RUN: usermod $*"

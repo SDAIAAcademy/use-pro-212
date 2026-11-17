@@ -1,0 +1,27 @@
+Return-Path: <bounce@sura-hotels.example>
+Received: from mail.sura-hotels.example (203.0.113.25) by mx-01.surahotels.example with ESMTPS; Tue, 10 Nov 2026 08:14:02 +0300
+Authentication-Results: mx-01.surahotels.example; spf=pass smtp.mailfrom=sura-hotels.example; dkim=pass header.d=sura-hotels.example; dmarc=pass header.from=sura-hotels.example
+From: "IT Operations | Sura Hotels" <it-ops@sura-hotels.example>
+To: servicedesk@surahotels.example
+Subject: تجديد شهادة الشبكة الافتراضية قبل نهاية اليوم
+Date: Tue, 10 Nov 2026 08:13:55 +0300
+Message-ID: <20261110081355.4471@sura-hotels.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+الزملاء الكرام في مكتب الخدمة،
+
+تحية طيبة، وبعد:
+
+ضمن خطة تجديد شهادة خدمة الدخول المقررة هذا الأسبوع، تنتهي صلاحية شهادة الشبكة الافتراضية على حواسيب المناوبة عند نهاية دوام اليوم. ولتفادي انقطاع الوصول إلى نظام الحجوزات في الوردية الليلية، نرجو من كل موظف مناوب تنفيذ الخطوتين الآتيتين قبل نهاية اليوم:
+
+1. تسجيل الدخول إلى بوابة التجديد بحساب المجموعة: https://vpn.sura-hotels.example/renew
+2. تشغيل برنامج التحديث الذي تعرضه البوابة بعد تسجيل الدخول، بصلاحيات المدير.
+
+تستغرق العملية أقل من ثلاث دقائق. الحسابات التي لا تُجدَّد شهادتها اليوم تُعلَّق تلقائيًا حتى مراجعتها يدويًا، وقد يستغرق ذلك يومي عمل.
+
+نشكر لكم تعاونكم ونعتذر عن قصر المهلة.
+
+مع التقدير،
+إدارة عمليات تقنية المعلومات
+مجموعة سُرى للفنادق

@@ -1,0 +1,21 @@
+alert	file	line	must_contain
+A-01	events/auth.log	184	result=OK acct=u2207 src=203.0.113.57
+A-02	events/auth.log	142	acct=u1310 src=198.51.100.24
+A-03	events/edr.jsonl	108	"parent": "sura-mgmt-agent.exe", "cmdline": "powershell.exe -NoProfile -EncodedCommand
+A-04	events/edr.jsonl	179	procdump64.exe -ma lsass.exe
+A-05	events/proxy.log	286	method=POST host=sura-hotels-sso.example path=/login
+A-06	events/mailgw.log	27	sender=<news@nuzul-systems.example>
+A-07	events/pms_app.log	199	rows=4812 job=night-audit
+A-08	events/auth.log	211	acct=svc-backup
+A-09	events/edr.jsonl	72	menu_update.exe
+A-10	events/proxy.log	72	host=share.wasl-media.example
+A-11	events/auth.log	239	result=APPROVED acct=u1890
+A-12	events/pms_app.log	265	src=203.0.113.99 rows=120 key_id=rk-07
+A-13	events/mailgw.log	107	action=rule.create
+A-14	events/proxy.log	318	path=/upload/img.php?cmd=id status=200
+A-15	events/edr.jsonl	161	nuzul-archiver.exe --job monthly
+A-16	events/auth.log	37	acct=u1555
+A-17	events/pms_app.log	233	UNION SELECT
+A-18	events/edr.jsonl	176	net localgroup administrators helpdesk2 /add
+A-19	events/mailgw.log	65	action=quarantine attach=list.zip
+A-20	events/proxy.log	190	host=telemetry.bms-cloud.example

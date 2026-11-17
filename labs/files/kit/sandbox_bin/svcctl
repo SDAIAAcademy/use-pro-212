@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# The service controller of the sandbox. Usage: svcctl status|start|stop pms-app
+SB="$(cd "$(dirname "$0")/.." && pwd)"
+state="$SB/srv/pms/state/service"
+if [ $# -ne 2 ] || [ "$2" != "pms-app" ]; then echo "usage: svcctl status|start|stop pms-app" >&2; exit 2; fi
+case "$1" in
+  status)
+    echo "pms-app: $(cat "$state") ($(grep '^log_level=' "$SB/srv/pms/etc/pms-app.conf"))"
+    [ "$(cat "$state")" = running ] ;;
+  stop) echo stopped > "$state"; echo "pms-app: stopped" ;;
+  start)
+    if [ ! -s "$SB/srv/pms/logs/audit.log" ]; then echo "pms-app: audit trail missing, refusing to start" >&2; exit 1; fi
+    if [ ! -e "$SB/srv/pms/logs/pms-app.log" ]; then echo "pms-app: current log missing, refusing to start" >&2; exit 1; fi
+    if [ "$(bash "$SB/bin/dfree" -p)" -ge 90 ]; then echo "pms-app: no space left on the log volume, start failed" >&2; exit 1; fi
+    echo running > "$state"; echo "pms-app: running" ;;
+  *) echo "usage: svcctl status|start|stop pms-app" >&2; exit 2 ;;
+esac

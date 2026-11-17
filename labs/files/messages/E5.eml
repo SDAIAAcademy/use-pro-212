@@ -1,0 +1,20 @@
+Return-Path: <hr-notices@surahotels.example>
+Received: from bulk.intranet.surahotels.example (10.20.2.14) by mx-01.surahotels.example with ESMTP; Tue, 10 Nov 2026 11:05:44 +0300
+Authentication-Results: mx-01.surahotels.example; spf=pass smtp.mailfrom=surahotels.example; dkim=pass header.d=surahotels.example; dmarc=pass header.from=surahotels.example
+From: "HR Notices" <hr-notices@surahotels.example>
+To: all-head-office@surahotels.example
+Subject: هاام: مواقف السيارات يوم الخميس !!
+Date: Tue, 10 Nov 2026 11:05:40 +0300
+Message-ID: <hr.5521@surahotels.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+الزملاء الاعزاء
+
+نحيطكم علما انه سيتم اغلاق المواقف السفليه يوم الخميس القادم بسبب اعمال الصيانه، الرجاء من الجميع استخدام المواقف الخارجيه وعدم الوقوف امام البوابه نهائيا!!
+
+من يحتاج تصريح موقف مؤقت يعبي النموذج في البوابه الداخليه قبل الاربعاء ضروري:
+https://intranet.surahotels.example/forms/parking
+
+وشكرا لتعاونكم
+الموارد البشريه

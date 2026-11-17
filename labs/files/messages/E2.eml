@@ -1,0 +1,22 @@
+Return-Path: <noreply@nuzul-systems.example>
+Received: from out.nuzul-systems.example (192.0.2.88) by mx-01.surahotels.example with ESMTPS; Tue, 10 Nov 2026 09:02:40 +0300
+Authentication-Results: mx-01.surahotels.example; spf=pass smtp.mailfrom=nuzul-systems.example; dkim=pass header.d=nuzul-systems.example; dmarc=pass header.from=nuzul-systems.example
+From: "Nuzul Systems Support" <noreply@nuzul-systems.example>
+To: it-operations@surahotels.example
+Subject: عاجل: نافذة صيانة نظام الحجوزات CHG-1190
+Date: Tue, 10 Nov 2026 09:02:31 +0300
+Message-ID: <chg1190.7781@nuzul-systems.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+عملاءنا الكرام في مجموعة سُرى للفنادق،
+
+نذكّركم بتحديث نظام الحجوزات المتفق عليه ضمن طلب التغيير CHG-1190، فجر الخميس 12 نوفمبر 2026. يتوقف النظام نحو 20 دقيقة داخل النافذة المعتمدة.
+
+المطلوب منكم قبل النافذة: لا شيء على الخوادم. نرجو فقط إبلاغ مكاتب الاستقبال بالتوقف.
+
+تفاصيل التحديث في بوابة الدعم: https://support.nuzul-systems.example/changes/CHG-1190
+
+لا يطلب فريقنا كلمات مرور ولا وصولًا عن بُعد خارج النافذة المعتمدة.
+
+فريق الدعم، نُزُل للأنظمة

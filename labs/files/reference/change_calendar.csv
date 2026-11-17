@@ -1,0 +1,4 @@
+change,system,window_start,window_end,owner,summary
+CHG-1184,fs-ho-01,2026-11-09T00:00+03:00,2026-11-09T04:00+03:00,Kamil Al-Hakim,Monthly archive job of the file server
+CHG-1190,pms (Nuzul),2026-11-12T02:00+03:00,2026-11-12T02:30+03:00,Kamil Al-Hakim,Vendor update of the booking system; 20 minutes of downtime
+CHG-1193,sso-01,2026-11-14T01:00+03:00,2026-11-14T02:00+03:00,Shihab Al-Khatib,Certificate renewal of the sign-in service

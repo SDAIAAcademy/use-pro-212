@@ -1,0 +1,186 @@
+2026-11-08T18:06:43+03:00 mx-01 dir=in sender=<info@surahotels.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:08:06+03:00 mx-01 dir=in sender=<sales@surahotels.example> rcpt=<obaid.aljizani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:12:40+03:00 mx-01 dir=out sender=<sales@travel-agency.example> rcpt=<dania.albaqmi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:18:47+03:00 mx-01 dir=out sender=<reservations@surahotels.example> rcpt=<daham.alfifi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:20:16+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:23:37+03:00 mx-01 dir=out sender=<info@surahotels.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:26:22+03:00 mx-01 dir=in sender=<reservations@corp-client.example> rcpt=<wadha.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:27:24+03:00 mx-01 dir=out sender=<reservations@surahotels.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:40:15+03:00 mx-01 dir=in sender=<events@surahotels.example> rcpt=<wadha.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:40:52+03:00 mx-01 dir=out sender=<events@corp-client.example> rcpt=<basma.alnajrani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:42:01+03:00 mx-01 dir=out sender=<events@surahotels.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:45:56+03:00 mx-01 dir=out sender=<sales@travel-agency.example> rcpt=<dania.alfifi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:46:56+03:00 mx-01 dir=out sender=<sales@travel-agency.example> rcpt=<dania.albaqmi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:47:13+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<zainab.alyami@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:53:00+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<daham.alfifi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:55:24+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<feras.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T18:57:31+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<dania.albaqmi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:01:51+03:00 mx-01 dir=out sender=<sales@travel-agency.example> rcpt=<feras.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:03:30+03:00 mx-01 dir=in sender=<info@surahotels.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:04:53+03:00 mx-01 dir=in sender=<reservations@corp-client.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:07:33+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<obaid.alyami@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:10:03+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<daham.alfifi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:23:44+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<dania.albaqmi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:25:21+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:25:25+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<wadha.almalki@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:29:58+03:00 mx-01 dir=in sender=<events@surahotels.example> rcpt=<feras.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:30:00+03:00 mx-01 dir=in sender=<news@nuzul-systems.example> rcpt=<list-1@surahotels.example> subj="Nuzul product news, November" spf=pass dkim=pass verdict=clean action=deliver attach=news-nov.pdf rcpts=71
+2026-11-08T19:30:01+03:00 mx-01 dir=in sender=<news@nuzul-systems.example> rcpt=<list-2@surahotels.example> subj="Nuzul product news, November" spf=pass dkim=pass verdict=clean action=deliver attach=news-nov.pdf rcpts=71
+2026-11-08T19:30:02+03:00 mx-01 dir=in sender=<news@nuzul-systems.example> rcpt=<list-3@surahotels.example> subj="Nuzul product news, November" spf=pass dkim=pass verdict=clean action=deliver attach=news-nov.pdf rcpts=71
+2026-11-08T19:31:52+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:35:35+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:42:59+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:48:07+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<wadha.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:51:00+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<rawan.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:51:11+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<feras.alnajrani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:55:11+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<daham.alfifi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T19:55:14+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<zainab.alyami@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:13:27+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:19:16+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:23:51+03:00 mx-01 dir=out sender=<info@surahotels.example> rcpt=<yahya.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:35:36+03:00 mx-01 dir=out sender=<reservations@travel-agency.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:37:50+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<basma.alnajrani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:46:02+03:00 mx-01 dir=out sender=<info@surahotels.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:46:30+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<obaid.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:47:49+03:00 mx-01 dir=in sender=<sales@surahotels.example> rcpt=<lama.alqarni@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:52:58+03:00 mx-01 dir=in sender=<sales@travel-agency.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T20:56:36+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<feras.alnajrani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:00:29+03:00 mx-01 dir=out sender=<reservations@surahotels.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:12:05+03:00 mx-01 dir=in sender=<reservations@corp-client.example> rcpt=<obaid.alyami@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:15:47+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:15:52+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<rawan.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:16:37+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<daham.alfifi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:18:25+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:24:31+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<dania.albaqmi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:26:50+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<rawan.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:33:33+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<yahya.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:38:31+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<wadha.almalki@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:52:56+03:00 mx-01 dir=in sender=<sales@travel-agency.example> rcpt=<wadha.almalki@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T21:53:42+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<obaid.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:04:41+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<obaid.alyami@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:10:57+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<basma.alnajrani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:13:42+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<feras.alnajrani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:37:37+03:00 mx-01 dir=out sender=<events@corp-client.example> rcpt=<obaid.alyami@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:43:09+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<wadha.almalki@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:45:00+03:00 mx-01 dir=in sender=<bookings@safar-travel.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Passenger list (password in next mail)" spf=pass dkim=pass verdict=suspicious action=quarantine attach=list.zip
+2026-11-08T22:47:45+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<lama.alharthi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:51:11+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<obaid.alyami@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:55:26+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<feras.alnajrani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:57:23+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T22:58:43+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:06:24+03:00 mx-01 dir=in sender=<info@surahotels.example> rcpt=<daham.alfifi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:11:54+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:15:28+03:00 mx-01 dir=out sender=<events@surahotels.example> rcpt=<basma.alnajrani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:20:08+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:23:03+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:23:05+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<rawan.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:24:35+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:25:14+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:30:47+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<dania.albaqmi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:35:11+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:37:11+03:00 mx-01 dir=in sender=<sales@surahotels.example> rcpt=<basma.alnajrani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:42:34+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<feras.aljizani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:43:18+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<wadha.almalki@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:45:36+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:45:49+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:50:36+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<dania.albaqmi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:55:20+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<feras.alnajrani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-08T23:58:45+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<zainab.alyami@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:03:24+03:00 mx-01 dir=out sender=<events@surahotels.example> rcpt=<dania.alfifi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:04:57+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:07:34+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:19:21+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<lama.alharthi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:19:44+03:00 mx-01 dir=in sender=<sales@surahotels.example> rcpt=<wadha.aljizani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:23:52+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<feras.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:29:52+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<feras.alnajrani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:31:03+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<dania.albaqmi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:37:08+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:37:58+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<lama.alharthi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:41:37+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<mahmoud.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:42:31+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<lama.alqarni@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:44:59+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<obaid.alyami@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:53:32+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<lama.alqarni@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:57:28+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<obaid.alyami@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T00:57:40+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<yahya.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:00:00+03:00 mx-01 dir=out sender=<reservations@travel-agency.example> rcpt=<rawan.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:03:59+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<feras.aljizani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:05:00+03:00 mx-01 dir=cfg sender=<dania.alfifi@surahotels.example> rcpt=<archive.box77@mail-archive.example> subj="rule.create forward_all" spf=- dkim=- verdict=- action=rule.create via=api
+2026-11-09T01:10:31+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:12:59+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:17:06+03:00 mx-01 dir=in sender=<sales@surahotels.example> rcpt=<zainab.alyami@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:27:16+03:00 mx-01 dir=out sender=<events@corp-client.example> rcpt=<feras.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:29:46+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<dania.albaqmi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:30:18+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<basma.alnajrani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:34:04+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<obaid.aljizani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:35:39+03:00 mx-01 dir=out sender=<reservations@travel-agency.example> rcpt=<yahya.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:41:21+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<obaid.aljizani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:45:46+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<rawan.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:50:06+03:00 mx-01 dir=out sender=<reservations@surahotels.example> rcpt=<daham.alfifi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:54:44+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:58:28+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<wadha.almalki@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T01:59:25+03:00 mx-01 dir=out sender=<sales@corp-client.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T02:23:12+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<lama.alharthi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T02:25:07+03:00 mx-01 dir=in sender=<it-support@sura-hotels-sso.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Action required: mailbox storage" spf=pass dkim=none verdict=clean action=deliver
+2026-11-09T02:31:13+03:00 mx-01 dir=out sender=<events@surahotels.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T02:31:41+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T02:44:32+03:00 mx-01 dir=out sender=<reservations@surahotels.example> rcpt=<lama.alharthi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T02:45:37+03:00 mx-01 dir=out sender=<info@surahotels.example> rcpt=<basma.alnajrani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T02:57:03+03:00 mx-01 dir=out sender=<sales@corp-client.example> rcpt=<feras.aljizani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:02:25+03:00 mx-01 dir=out sender=<info@surahotels.example> rcpt=<wadha.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:03:06+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<daham.alfifi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:03:17+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:09:04+03:00 mx-01 dir=out sender=<sales@travel-agency.example> rcpt=<obaid.aljizani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:13:23+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:16:40+03:00 mx-01 dir=in sender=<info@surahotels.example> rcpt=<basma.alnajrani@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:17:26+03:00 mx-01 dir=out sender=<events@corp-client.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:19:14+03:00 mx-01 dir=in sender=<events@travel-agency.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:19:36+03:00 mx-01 dir=out sender=<events@corp-client.example> rcpt=<yahya.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:26:28+03:00 mx-01 dir=out sender=<events@travel-agency.example> rcpt=<basma.alnajrani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:26:54+03:00 mx-01 dir=in sender=<reservations@surahotels.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:32:35+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:34:34+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<mahmoud.hawsawi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:37:23+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<yahya.althubaiti@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:38:17+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<obaid.alyami@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:45:51+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:50:52+03:00 mx-01 dir=in sender=<sales@surahotels.example> rcpt=<feras.aljizani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T03:59:09+03:00 mx-01 dir=in sender=<sales@travel-agency.example> rcpt=<rawan.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:03:11+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:03:55+03:00 mx-01 dir=out sender=<reservations@travel-agency.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:09:42+03:00 mx-01 dir=in sender=<sales@surahotels.example> rcpt=<wadha.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:15:11+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:25:30+03:00 mx-01 dir=out sender=<events@surahotels.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:26:37+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:43:31+03:00 mx-01 dir=out sender=<info@surahotels.example> rcpt=<lama.alharthi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:49:26+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<rawan.albaqmi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T04:50:24+03:00 mx-01 dir=in sender=<sales@travel-agency.example> rcpt=<wadha.almalki@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:09:40+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<dania.albaqmi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:09:50+03:00 mx-01 dir=out sender=<sales@corp-client.example> rcpt=<mahmoud.hawsawi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:13:28+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:13:50+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<obaid.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:23:50+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<wadha.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:35:49+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<obaid.alyami@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:36:39+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:39:33+03:00 mx-01 dir=out sender=<info@travel-agency.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:45:28+03:00 mx-01 dir=out sender=<sales@travel-agency.example> rcpt=<mahmoud.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T05:49:58+03:00 mx-01 dir=in sender=<sales@travel-agency.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:00:50+03:00 mx-01 dir=out sender=<sales@travel-agency.example> rcpt=<daham.alfifi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:01:25+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<lama.alqarni@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:07:45+03:00 mx-01 dir=in sender=<events@surahotels.example> rcpt=<dania.alfifi@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:17:50+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<feras.alnajrani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:23:08+03:00 mx-01 dir=out sender=<reservations@corp-client.example> rcpt=<zainab.alyami@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:27:16+03:00 mx-01 dir=in sender=<info@travel-agency.example> rcpt=<feras.alnajrani@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:33:00+03:00 mx-01 dir=out sender=<sales@surahotels.example> rcpt=<mahmoud.hawsawi@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:33:27+03:00 mx-01 dir=out sender=<reservations@surahotels.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:41:44+03:00 mx-01 dir=in sender=<info@surahotels.example> rcpt=<daham.alfifi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:46:27+03:00 mx-01 dir=in sender=<info@surahotels.example> rcpt=<feras.aljizani@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:53:23+03:00 mx-01 dir=in sender=<sales@travel-agency.example> rcpt=<obaid.aljizani@surahotels.example> subj="Invoice copy" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:54:07+03:00 mx-01 dir=in sender=<events@corp-client.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T06:54:41+03:00 mx-01 dir=out sender=<reservations@travel-agency.example> rcpt=<jawad.hawsawi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:07:28+03:00 mx-01 dir=in sender=<info@corp-client.example> rcpt=<dania.alfifi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:17:54+03:00 mx-01 dir=out sender=<info@corp-client.example> rcpt=<lama.alharthi@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:26:14+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:26:25+03:00 mx-01 dir=out sender=<sales@corp-client.example> rcpt=<wadha.althubaiti@surahotels.example> subj="Rate confirmation" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:38:50+03:00 mx-01 dir=in sender=<reservations@travel-agency.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:41:26+03:00 mx-01 dir=in sender=<sales@corp-client.example> rcpt=<qasim.althubaiti@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:43:18+03:00 mx-01 dir=out sender=<reservations@travel-agency.example> rcpt=<ghadah.alanzi@surahotels.example> subj="Meeting room request" spf=pass dkim=pass verdict=clean action=deliver
+2026-11-09T07:47:26+03:00 mx-01 dir=out sender=<events@surahotels.example> rcpt=<wadha.almalki@surahotels.example> subj="Group booking" spf=pass dkim=pass verdict=clean action=deliver

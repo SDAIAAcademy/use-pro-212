@@ -1,0 +1,3 @@
+hash,name,signed_by,note
+a41f09c2e7b3d5,inventory.ps1 (encoded),Sura IT operations,hourly inventory job of sura-mgmt-agent
+77c0de41aa90b2,nuzul-archiver.exe,Nuzul Systems,monthly archive job
