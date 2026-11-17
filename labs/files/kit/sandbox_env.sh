@@ -17,6 +17,11 @@ step() {
   local n="${1:?step <number> '<command>'}"; shift
   local cmd="$*" out rc
   if [ ! -f "$SB/.sura-sandbox" ]; then echo "step: no sandbox, nothing was run" >&2; return 2; fi
+  # The sandbox is a folder, not a wall: refuse a command that names a place outside it.
+  # This catches what is written, not what a variable expands to: read every step first.
+  if printf '%s\n' "${cmd//\/dev\/null/}" | grep -q -E '(^|[[:space:];|&<>(=])(/|~)|(^|[^[:alnum:]_])sudo([^[:alnum:]_]|$)|\.\.(/|$|[[:space:]])'; then
+    echo "step: the command names a path outside the sandbox (an absolute path, ~, .. or sudo); nothing was run" >&2; return 2
+  fi
   out="$(cd "$SB" && bash -c "$cmd" 2>&1)"; rc=$?
   { echo "## step $n  $(date -u +%Y-%m-%dT%H:%M:%SZ)"; echo "\$ $cmd"; [ -z "$out" ] || printf '%s\n' "$out"; echo "exit=$rc"; echo; } >> "$SB/run_log.txt"
   [ -z "$out" ] || printf '%s\n' "$out"

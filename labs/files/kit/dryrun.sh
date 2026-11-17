@@ -6,6 +6,14 @@ set -u
 KIT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 script="${1:?usage: dryrun.sh <script> [arguments]}"; shift
 [ -f "$script" ] || { echo "dryrun.sh: no such script: $script" >&2; exit 2; }
+# The sandbox is a folder, not a wall: refuse a script that names a place outside it.
+# This catches what is written, not what a variable expands to: read the script first.
+outside="$(grep -n -v -E '^[[:space:]]*#' "$script" | sed 's#/dev/null##g' | grep -E '(^[0-9]+:|[[:space:];|&<>(=])(/|~)|(^|[^[:alnum:]_])sudo([^[:alnum:]_]|$)|\.\.(/|$|[[:space:]])' || true)"
+if [ -n "$outside" ]; then
+  echo "dryrun.sh: the script names a path outside the sandbox (an absolute path, ~, .. or sudo); nothing was run:" >&2
+  printf '%s\n' "$outside" | sed 's/^/   /' >&2
+  exit 2
+fi
 SB="$(bash "$KIT/make_scripts_sandbox.sh")"
 [ -f "$SB/.sura-sandbox" ] || { echo "dryrun.sh: no sandbox, nothing was run" >&2; exit 2; }
 cp "$script" "$SB/work/script.sh"
