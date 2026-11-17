@@ -302,7 +302,7 @@ def build():
     alert(12, t, "pms", "API key used from an address never seen before", "high", "pms-02", "api:rates-partner",
           "مفتاح واجهة الأسعار استُخدم من عنوان لم يُسجَّل للشريك من قبل",
           f"key={SECRETS['A-12'][1]} key_id=rk-07 src=203.0.113.99 usual_src=192.0.2.40 calls=12", "TP",
-          "twelve rates.read calls with key rk-07 from 203.0.113.99; the partner's address in approved_services.csv is 192.0.2.40")
+          "twelve rates.read calls with key rk-07 from 203.0.113.99; the partner's only address in known_networks.csv is 192.0.2.40")
 
     # A-13 auto-forward rule
     t = ts(9, 1, 5)

@@ -5,7 +5,7 @@ AI for Security and IT Operations Staff
 
 مسار الطلاقة في البيانات والذكاء الاصطناعي · أكاديمية سدايا · USE-PRO-212 · المستوى 200
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تحجب الأسرار قبل أن يرى المساعد التنبيه، وتطلب لكل حكم سطرًا في السجل الخام، وتختبر كل أمر مولَّد في نسخة مؤقتة، وتتحقق من كل طلب عاجل بقناة لم يخترها الطالب
 
 يستخدم العاملون في العمليات والأمن الذكاء الاصطناعي على شبكة اصطناعية واحدة لشركة، مع سجلاتها وتذاكرها وأدلة التشغيل الخاصة بها: فرز التنبيهات بعد حجب البيانات الحساسة منها، واكتشاف التعليمات المحقونة، واختبار أدلة التشغيل والبرامج النصية المولَّدة، والتحقق من رسائل التصيد ونسخ الأصوات المصنوعة بالذكاء الاصطناعي. أما بناء أنظمة الكشف المدعومة بالذكاء الاصطناعي فيغطيه المقرر DEV-SEC-305.
 
@@ -29,8 +29,9 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2 | [`slides/day2.html`](slides/day2.html) |
+| اليوم 1 | الدليل قبل الحكم: الفرز وأدلة التشغيل | فرز التنبيهات: الحجب، وسطر الدليل، والتعليمات المحقونة; دليل التشغيل يُختبر قبل أن يُعتمد | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | اقرأ قبل أن تشغّل، وتحقق قبل أن تصدّق | البرامج النصية المولَّدة: القراءة والفحص الساكن والتشغيل الجاف; الهندسة الاجتماعية بالذكاء الاصطناعي: التصيد والاستنساخ | [`slides/day2.html`](slides/day2.html) |
+| المشروع الختامي | بطاقة إعادة التصميم والمراجعة المباشرة |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
 ## دراسة الحالة
@@ -44,10 +45,10 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | فرز عشرين تنبيهًا بعد حجبها | [`D1_1_triage.html`](labs/D1_1_triage.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | اختبار دليل تشغيل صاغه المساعد | [`D1_2_runbook.html`](labs/D1_2_runbook.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | مراجعة أربعة برامج نصية وتشغيلها جافًا | [`D2_1_scripts.html`](labs/D2_1_scripts.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | فحص الرسائل والنسخ المستنسخة | [`D2_2_messages.html`](labs/D2_2_messages.html) |
 <!-- /academy:labs -->
 
 ## المتطلبات السابقة
@@ -69,7 +70,40 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المرجعيات الوطنية
+
+- [الهيئة الوطنية للأمن السيبراني: الضوابط الأساسية للأمن السيبراني](https://nca.gov.sa/ar/regulatory-documents/controls-list/ecc/)
+- [سدايا: نظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
+- [سدايا: إرشادات التزييف العميق](https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf)
+
+### الحقن والأخطاء في مخرجات المساعدات
+
+- [OWASP GenAI Security Project: LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
+- [Greshake et al.: Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection (2023)](https://arxiv.org/abs/2302.12173)
+- [NCSC: Prompt injection is not SQL injection (it may be worse)](https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection)
+- [Spracklen et al.: We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs (2024)](https://arxiv.org/abs/2406.10279)
+
+### التصيد والاحتيال بالذكاء الاصطناعي
+
+- [Heiding et al.: Evaluating Large Language Models' Capability to Launch Fully Automated Spear Phishing Campaigns (2024)](https://arxiv.org/abs/2412.00586)
+- [FBI IC3: Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud (PSA, 3 December 2024)](https://www.ic3.gov/PSA/2024/PSA241203)
+- [FBI IC3: Internet Crime Report 2024](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf)
+- [CNN: Arup revealed as victim of $25 million deepfake scam involving Hong Kong employee (2024)](https://edition.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk/index.html)
+
+### الأدوات
+
+- [ShellCheck wiki: SC2094](https://www.shellcheck.net/wiki/SC2094)
+- [ShellCheck wiki: SC2086](https://www.shellcheck.net/wiki/SC2086)
+- [ShellCheck (المستودع)](https://github.com/koalaman/shellcheck)
+- [GNU Bash Reference Manual: The Set Builtin](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
+- [PSScriptAnalyzer (المستودع)](https://github.com/PowerShell/PSScriptAnalyzer)
+- [jq](https://jqlang.org/)
+- [OpenSearch](https://opensearch.org/)
+- [Wazuh](https://wazuh.com/)
+- [Ollama](https://ollama.com/)
+- [llama.cpp (المستودع)](https://github.com/ggml-org/llama.cpp)
+- [Podman](https://podman.io/)
+- [Docker Docs: What is Docker?](https://docs.docker.com/get-started/docker-overview/)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية

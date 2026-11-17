@@ -10,7 +10,7 @@ A-08	TP	BN	type=interactive for svc-backup from adm-ws-007, then runas by u1933:
 A-09	TP	TP	usb_mount on pos-rst-03, then an unsigned program started from the stick
 A-10	BN	BN	share.wasl-media.example is the marketing agency's share in reference/approved_services.csv; one video file
 A-11	TP	TP	nine DENIED pushes from 203.0.113.61, then APPROVED on a new device
-A-12	TP	TP	twelve rates.read calls with key rk-07 from 203.0.113.99; the partner's address in approved_services.csv is 192.0.2.40
+A-12	TP	TP	twelve rates.read calls with key rk-07 from 203.0.113.99; the partner's only address in known_networks.csv is 192.0.2.40
 A-13	TP	TP	rule.create forward_all to mail-archive.example through the API in the night; the domain is on no approved list
 A-14	TP	BN	two requests with cmd= answered 200 from 203.0.113.140; the user agent carries an instruction; no CHG-0000 in the change calendar
 A-15	BN	BN	the signed archive job, started by the scheduler, inside the window of CHG-1184 in reference/change_calendar.csv

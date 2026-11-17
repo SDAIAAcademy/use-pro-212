@@ -16,17 +16,21 @@ svcctl status pms-app; expect "service before any step (exit code of status)" "$
 audit_sum="$(cksum < srv/pms/logs/audit.log)"
 
 echo "== the five faults of the drafted runbook show when its steps are run"
-step D1 'du -sh --top 5 srv/pms/logs' > /dev/null 2>&1
+DRAFT=()
+while IFS= read -r line; do DRAFT+=("$line"); done < <(sed -n 's/^[$] //p' "$FILES/incident/sahir_runbook_draft.md")
+expect "commands in the recorded draft" "${#DRAFT[@]}" 5
+expect "draft step 1 as written" "${DRAFT[0]}" "du -sh --top 5 srv/pms/logs"
+step D1 "${DRAFT[0]}" > /dev/null 2>&1
 [ "$?" -ne 0 ] && ok "draft step 1: the flag --top does not exist, the command fails" || fail "du --top should fail"
-step D2 'svcctl start pms-app' > d2.out 2>&1; rc=$?
+step D2 "${DRAFT[1]}" > d2.out 2>&1; rc=$?
 grep -q 'no space left' d2.out && [ "$rc" -ne 0 ] && ok "draft step 2: start before space is freed fails" || fail "start should fail on a full volume"
-step D3 'rm -f srv/pms/logs/*.log' > /dev/null 2>&1
+step D3 "${DRAFT[2]}" > /dev/null 2>&1
 [ ! -e srv/pms/logs/audit.log ] && ok "draft step 3: the audit log is gone" || fail "the draft's delete should remove audit.log"
 expect "draft step 3: rotated logs still there" "$(find srv/pms/logs -name 'pms-app.log.[1-5]' | wc -l | tr -d ' ')" 5
 after_rm="$(dfree -p)"
 [ "$after_rm" -ge 80 ] && ok "draft step 3: the volume is still at $after_rm%" || fail "the delete should free little"
-step D4 "sed -i 's/^log_level=debug\$/log_level=info/' srv/pms/etc/pms-app.conf" > /dev/null 2>&1
-step D5 'svcctl start pms-app' > d5.out 2>&1; rc=$?
+step D4 "${DRAFT[3]}" > /dev/null 2>&1
+step D5 "${DRAFT[4]}" > d5.out 2>&1; rc=$?
 grep -q 'audit trail missing' d5.out && [ "$rc" -ne 0 ] && ok "draft step 5: the service refuses to start without its audit trail" || fail "start should fail without audit.log"
 expect "draft: steps in the run log" "$(grep -c '^## step' "$SB/run_log.txt")" 5
 ok "the draft has no verification step and no rollback (read, not run)"

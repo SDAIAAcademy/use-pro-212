@@ -24,6 +24,8 @@ grep -q 'index.tsv  720 -> 0' s1.out && ok "the session index of all nine hotels
 bash "$KIT/dryrun.sh" "$S/purge_backups.sh" > s2.out 2>&1; cat s2.out
 expect "purge_backups.sh: files deleted" "$(field s2.out deleted)" 5
 expect "purge_backups.sh: protected files lost" "$(field s2.out protected_lost)" 2
+expect "the recorded tutor says only old backups are deleted" "$(grep -c 'سيحذف النسخ الاحتياطية القديمة فقط' "$S/tutor_explanation_purge.md")" 1
+grep -q '   - srv/backup/db-latest.dump' s2.out && ok "the dry run contradicts the tutor: the database dump of last night is deleted" || fail "db-latest.dump should be deleted"
 bash "$KIT/dryrun.sh" "$S/lock_stale_accounts.sh" > s3.out 2>&1; cat s3.out
 expect "lock_stale_accounts.sh: protected files lost" "$(field s3.out protected_lost)" 0
 expect "lock_stale_accounts.sh: accounts it would lock" "$(grep '   > usermod -L' s3.out | sed 's/.*-L //' | tr '\n' ' ')" "u1203 u1344 u2290 "
