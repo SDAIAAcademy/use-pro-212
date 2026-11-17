@@ -1,0 +1,4 @@
+run,when,with_assistant,minutes,errors_found_by_reviewer,error_kinds,reviewer,note
+baseline,pre-work,no,,,,,
+run1,between the two days,yes,,,,,
+run2,capstone preparation,yes,,,,,

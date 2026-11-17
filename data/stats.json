@@ -1,0 +1,519 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-17T20:29:21Z",
+    "version": "2027.1.0",
+    "commit": "b5d0b70"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "totals": {
+    "decks": 3,
+    "slides": 83,
+    "words": 5698,
+    "notes": 79,
+    "notes_ratio": 0.95,
+    "activities": 7,
+    "styles": 14,
+    "slide_minutes": null,
+    "components": {
+      "cards": 63,
+      "pills": 4,
+      "callouts": 44,
+      "tables": 9,
+      "code": 6,
+      "tokens": 0,
+      "flows": 4,
+      "stats": 9,
+      "bars": 3,
+      "meters": 0,
+      "agendas": 3,
+      "quizzes": 7,
+      "checklists": 4,
+      "prompts": 1,
+      "chats": 4,
+      "tools": 0,
+      "traces": 3,
+      "ladders": 0,
+      "figures": 0,
+      "matrices": 0,
+      "timers": 4,
+      "columns": 43,
+      "images": 0,
+      "drawings": 0,
+      "fragments": 0
+    },
+    "minutes": 420
+  },
+  "decks": [
+    {
+      "deck": "day1",
+      "kind": "day",
+      "label": "اليوم 1",
+      "title": "الدليل قبل الحكم: الفرز وأدلة التشغيل",
+      "slides": 38,
+      "words": 2814,
+      "notes": 36,
+      "notes_ratio": 0.95,
+      "activities": 3,
+      "styles": 5,
+      "slide_minutes": null,
+      "components": {
+        "cards": 36,
+        "pills": 4,
+        "callouts": 21,
+        "tables": 4,
+        "code": 2,
+        "tokens": 0,
+        "flows": 3,
+        "stats": 4,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 2,
+        "prompts": 0,
+        "chats": 2,
+        "tools": 0,
+        "traces": 2,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 21,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 210,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "فرز التنبيهات: الحجب، وسطر الدليل، والتعليمات المحقونة",
+          "slides": 17,
+          "words": 1331,
+          "notes": 16,
+          "notes_ratio": 0.94,
+          "activities": 2,
+          "styles": 5,
+          "slide_minutes": null,
+          "components": {
+            "cards": 15,
+            "pills": 0,
+            "callouts": 11,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 1,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 2,
+            "tools": 0,
+            "traces": 2,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 9,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 50
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "دليل التشغيل يُختبر قبل أن يُعتمد",
+          "slides": 14,
+          "words": 976,
+          "notes": 13,
+          "notes_ratio": 0.93,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 12,
+            "pills": 0,
+            "callouts": 7,
+            "tables": 2,
+            "code": 1,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 3,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 8,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 50
+        }
+      ]
+    },
+    {
+      "deck": "day2",
+      "kind": "day",
+      "label": "اليوم 2",
+      "title": "اقرأ قبل أن تشغّل، وتحقق قبل أن تصدّق",
+      "slides": 32,
+      "words": 2165,
+      "notes": 30,
+      "notes_ratio": 0.94,
+      "activities": 4,
+      "styles": 4,
+      "slide_minutes": null,
+      "components": {
+        "cards": 19,
+        "pills": 0,
+        "callouts": 15,
+        "tables": 3,
+        "code": 4,
+        "tokens": 0,
+        "flows": 1,
+        "stats": 5,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 4,
+        "checklists": 2,
+        "prompts": 1,
+        "chats": 2,
+        "tools": 0,
+        "traces": 1,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 17,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 210,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "فحص البرامج النصية المولَّدة قبل تشغيلها",
+          "slides": 13,
+          "words": 928,
+          "notes": 12,
+          "notes_ratio": 0.92,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 3,
+            "pills": 0,
+            "callouts": 7,
+            "tables": 2,
+            "code": 2,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 3,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 1,
+            "chats": 1,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 50
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "الهندسة الاجتماعية بالذكاء الاصطناعي: التصيد والاستنساخ",
+          "slides": 16,
+          "words": 1012,
+          "notes": 15,
+          "notes_ratio": 0.94,
+          "activities": 1,
+          "styles": 4,
+          "slide_minutes": null,
+          "components": {
+            "cards": 16,
+            "pills": 0,
+            "callouts": 7,
+            "tables": 1,
+            "code": 2,
+            "tokens": 0,
+            "flows": 0,
+            "stats": 2,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 1,
+            "tools": 0,
+            "traces": 1,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 10,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 105,
+          "lab_minutes": 50
+        }
+      ]
+    },
+    {
+      "deck": "capstone",
+      "kind": "capstone",
+      "label": "المشروع الختامي",
+      "title": "بطاقة إعادة التصميم والمراجعة المباشرة",
+      "slides": 13,
+      "words": 719,
+      "notes": 13,
+      "notes_ratio": 1,
+      "activities": 0,
+      "styles": 5,
+      "slide_minutes": null,
+      "components": {
+        "cards": 8,
+        "pills": 0,
+        "callouts": 8,
+        "tables": 2,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 0,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 0,
+        "checklists": 0,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 4,
+        "columns": 5,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": null,
+      "sessions": []
+    }
+  ],
+  "coverage": [
+    {
+      "id": "LO1",
+      "text": "يستخدم مساعد ذكاء اصطناعي لفرز التنبيهات بعد حجب البيانات الحساسة منها، ويتحقق من كل حكم مقارنة بالأحداث الخام، استنادًا إلى عشرين تنبيهًا لم تُحجب بياناتها، يحمل أحدها تعليمات محقونة",
+      "level": "Applied",
+      "slides": [
+        "day1#assistant-in-the-shift",
+        "day1#confidence-is-not-evidence",
+        "day1#invented-fields",
+        "day1#where-secrets-hide",
+        "day1#what-patterns-miss",
+        "day1#or-a-local-model",
+        "day1#check-redaction",
+        "day1#evidence-line",
+        "day1#instruction-in-a-field",
+        "day1#where-instructions-hide",
+        "day1#limit-what-it-may-do",
+        "day1#check-injection",
+        "day1#redact-before-sharing",
+        "day1#confident-and-wrong",
+        "day1#injection-in-logs",
+        "day2#check-day1-review",
+        "day2#text-only-the-assistant-reads",
+        "day2#hidden-text",
+        "capstone#ai-off-check"
+      ],
+      "activities": [
+        "day1#check-redaction-q1",
+        "day1#check-injection-q1",
+        "day2#check-day1-review-q1"
+      ],
+      "sessions": [
+        "day1/1"
+      ],
+      "labs": [
+        "1.1"
+      ],
+      "questions": [
+        "q-lo1-redact-scope",
+        "q-lo1-evidence",
+        "q-lo1-injection"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO2",
+      "text": "يصوغ دليل تشغيل من حادثة مغلقة، ويختبر كل خطوة في بيئة مؤقتة قابلة للإتلاف، استنادًا إلى تذكرة الحادثة",
+      "level": "Applied",
+      "slides": [
+        "day1#from-incident-to-runbook",
+        "day1#what-drafts-get-wrong",
+        "day1#disposable-environment",
+        "day1#run-log",
+        "day1#backup-and-rollback",
+        "day1#approval-point",
+        "day1#check-runbook",
+        "day1#what-the-draft-gets-wrong",
+        "day1#free-space-safely",
+        "day2#check-day1-review"
+      ],
+      "activities": [
+        "day1#check-runbook-q1"
+      ],
+      "sessions": [
+        "day1/2"
+      ],
+      "labs": [
+        "1.2"
+      ],
+      "questions": [
+        "q-lo2-order",
+        "q-lo2-rollback",
+        "q-lo2-verify"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO3",
+      "text": "يختبر البرامج النصية لإدارة الأنظمة التي ولّدها الذكاء الاصطناعي بالقراءة والتحليل الساكن والتشغيل الجاف (dry run)، على أربعة برامج نصية، في اثنين منها أسطر مدمرة مزروعة",
+      "level": "Applied",
+      "slides": [
+        "day2#read-before-run",
+        "day2#destructive-patterns",
+        "day2#tutor-not-judge",
+        "day2#check-scripts-read",
+        "day2#static-analysis",
+        "day2#what-lint-misses",
+        "day2#dry-run",
+        "day2#check-lint-clean",
+        "day2#tutor-can-be-wrong",
+        "day2#four-scripts-results",
+        "day2#numbers-from-the-dry-run",
+        "capstone#ai-off-check"
+      ],
+      "activities": [
+        "day2#check-scripts-read-q1",
+        "day2#check-lint-clean-q1"
+      ],
+      "sessions": [
+        "day2/1"
+      ],
+      "labs": [
+        "2.1"
+      ],
+      "questions": [
+        "q-lo3-lint-clean",
+        "q-lo3-same-file",
+        "q-lo3-tutor"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO4",
+      "text": "يحلل الرسائل والمكالمات المشبوهة بحثًا عن التصيد والاستنساخ المصنوعين بالذكاء الاصطناعي، ثم يتحقق منها ويبلغ عنها، استنادًا إلى ست رسائل بريد إلكتروني ونسخة صوتية مستنسخة ومقطع فيديو",
+      "level": "Applied",
+      "slides": [
+        "day2#language-is-not-the-tell",
+        "day2#lookalike-domains",
+        "day2#text-only-the-assistant-reads",
+        "day2#voice-clone",
+        "day2#video-clone",
+        "day2#out-of-band",
+        "day2#reporting",
+        "day2#check-out-of-band",
+        "day2#headers-over-language",
+        "day2#hidden-text",
+        "day2#call-and-video-results"
+      ],
+      "activities": [
+        "day2#check-out-of-band-q1"
+      ],
+      "sessions": [
+        "day2/2"
+      ],
+      "labs": [
+        "2.2"
+      ],
+      "questions": [
+        "q-lo4-headers",
+        "q-lo4-callback",
+        "q-lo4-report"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO5",
+      "text": "يعيد تصميم مهمة تشغيلية متكررة واحدة باستخدام الذكاء الاصطناعي، ويقيس الوقت والأخطاء في تشغيلين، استنادًا إلى خط الأساس المعدّ في العمل التحضيري",
+      "level": "Performance",
+      "slides": [
+        "day1#approval-point",
+        "day1#baseline-and-run-one",
+        "day2#compare-two-runs",
+        "capstone#the-task",
+        "capstone#run-two",
+        "capstone#count-the-errors",
+        "capstone#what-you-hand-in",
+        "capstone#rubric",
+        "capstone#what-next"
+      ],
+      "activities": [],
+      "sessions": [
+        "day1/2",
+        "day2/2"
+      ],
+      "labs": [
+        "1.2",
+        "2.2"
+      ],
+      "questions": [
+        "q-lo5-measure",
+        "q-lo5-approval",
+        "q-lo5-one-change"
+      ],
+      "covered": true
+    }
+  ]
+}

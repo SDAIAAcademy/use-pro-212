@@ -1,0 +1,7 @@
+item	truth	sahir	signals
+E1	MAL	LEGIT	unknown_sender
+E2	LEGIT	LEGIT	none
+E3	MAL	MAL	reply_to_mismatch dmarc_fail
+E4	MAL	MAL	unknown_sender
+E5	LEGIT	MAL	none
+E6	MAL	LEGIT	unknown_sender hidden_text

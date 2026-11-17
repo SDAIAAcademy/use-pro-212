@@ -1,0 +1,31 @@
+# الذكاء الاصطناعي للعاملين في الأمن وعمليات تقنية المعلومات
+
+> تحجب الأسرار قبل أن يرى المساعد التنبيه، وتطلب لكل حكم سطرًا في السجل الخام، وتختبر كل أمر مولَّد في نسخة مؤقتة، وتتحقق من كل طلب عاجل بقناة لم يخترها الطالب. مقرر من أكاديمية سدايا، الرمز USE-PRO-212، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-pro-212/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-pro-212/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-pro-212/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 14,438 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-pro-212/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: الدليل قبل الحكم: الفرز وأدلة التشغيل](https://sdaiaacademy.github.io/use-pro-212/slides/day1.md): تحجب الأسرار والبيانات الشخصية قبل أن يرى المساعد التنبيهات، وتطلب لكل حكم سطرًا في الحدث الخام، وترصد التعليمة المحقونة، ثم تختبر دليل تشغيل صاغه المساعد خطوة خطوة في نسخة مؤقتة من الخادم؛ الجلسات: فرز التنبيهات: الحجب، وسطر الدليل، والتعليمات المحقونة، دليل التشغيل يُختبر قبل أن يُعتمد؛ الصفحة: https://sdaiaacademy.github.io/use-pro-212/slides/day1.html؛ نحو 6,549 من الوحدات النصية
+- [اليوم 2: اقرأ قبل أن تشغّل، وتحقق قبل أن تصدّق](https://sdaiaacademy.github.io/use-pro-212/slides/day2.md): تراجع أربعة برامج نصية ولّدها المساعد بالقراءة والفحص الآلي والتشغيل الجاف وتصحح المدمر منها، ثم تحكم على ست رسائل ومكالمة بصوت مستنسخ ومقطع فيديو بالترويسات والقناة المستقلة وتبلّغ عنها؛ الجلسات: فحص البرامج النصية المولَّدة قبل تشغيلها، الهندسة الاجتماعية بالذكاء الاصطناعي: التصيد والاستنساخ؛ الصفحة: https://sdaiaacademy.github.io/use-pro-212/slides/day2.html؛ نحو 5,299 من الوحدات النصية
+- [المشروع الختامي: بطاقة إعادة التصميم والمراجعة المباشرة](https://sdaiaacademy.github.io/use-pro-212/slides/capstone.md): مهمة تشغيلية متكررة من عملك تُنفَّذ مرتين على مواد اصطناعية أو منقَّحة وتُقاس على خط أساسها، وفحص دون ذكاء اصطناعي، ثم مراجعة تعيد فيها خطوة من دليل تشغيل وتدافع عن حكم فرز بسطر دليله؛ الصفحة: https://sdaiaacademy.github.io/use-pro-212/slides/capstone.html؛ نحو 1,880 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: فرز عشرين تنبيهًا بعد حجب البيانات الحساسة](https://sdaiaacademy.github.io/use-pro-212/labs/D1_1_triage.md): اليوم 1، الجلسة 1، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-212/labs/D1_1_triage.html
+- [المختبر 1.2: اختبار دليل تشغيل مصوغ](https://sdaiaacademy.github.io/use-pro-212/labs/D1_2_runbook.md): اليوم 1، الجلسة 2، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-212/labs/D1_2_runbook.html
+- [المختبر 2.1: مراجعة أربعة برامج نصية وفحصها آليًا وتشغيلها تشغيلًا جافًا](https://sdaiaacademy.github.io/use-pro-212/labs/D2_1_scripts.md): اليوم 2، الجلسة 1، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-212/labs/D2_1_scripts.html
+- [المختبر 2.2: فحص الرسائل والنسخ المستنسخة](https://sdaiaacademy.github.io/use-pro-212/labs/D2_2_messages.md): اليوم 2، الجلسة 2، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-212/labs/D2_2_messages.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-pro-212/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 14,438 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/use-pro-212/context/day1.md): اليوم 1، نحو 6,549 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/use-pro-212/context/day2.md): اليوم 2، نحو 5,299 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-pro-212/context/capstone.md): المشروع الختامي، نحو 1,880 من الوحدات النصية

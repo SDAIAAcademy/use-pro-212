@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Space used on the log volume of the sandbox. "dfree -p" prints the percentage only.
+SB="$(cd "$(dirname "$0")/.." && pwd)"
+used=$(( ($(find "$SB/srv" -type f -exec cat {} + | wc -c) + 1023) / 1024 ))
+cap=$(cat "$SB/srv/capacity_kb")
+pct=$((used * 100 / cap))
+if [ "${1:-}" = "-p" ]; then echo "$pct"; else echo "log volume: used $used KB of $cap KB ($pct%)"; fi

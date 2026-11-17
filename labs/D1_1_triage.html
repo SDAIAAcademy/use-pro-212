@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.1 · فرز عشرين تنبيهًا بعد حجب البيانات الحساسة · الذكاء الاصطناعي للعاملين في الأمن وعمليات تقنية المعلومات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_1_triage.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.1</span>
+<h1>فرز عشرين تنبيهًا بعد حجب البيانات الحساسة</h1>
+<p>تحجب الأسرار والبيانات الشخصية من عشرين تنبيهًا خامًا، ثم تتحقق من فرز «ساهر» حكمًا حكمًا في الأحداث الخام، وتخرج بورقة فرز بأسطر الأدلة وسجل حجب والتعليمة المحقونة مرصودة.</p>
+<div class="meta"><span>50 دقيقة</span><span>اليوم 1</span><span>الجلسة 1: فرز التنبيهات: الحجب، وسطر الدليل، والتعليمات المحقونة</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.1">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>ملف تنبيهات منقَّح لا يجد فيه الماسح شيئًا، وسجل حجب يعدّ ما حُجب من كل نوع.</li>
+    <li>ورقة فرز فيها لكل تنبيه حكمك، وملف الحدث الخام ورقم السطر الذي يثبته، وما يقوله السطر.</li>
+    <li>التعليمة المحقونة مرصودة، وسطر واحد بما لا يُسمح للمساعد بفعله.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/alerts/alerts_raw.jsonl" download><b>alerts/alerts_raw.jsonl</b><span>التنبيهات العشرون كما خرجت من أنظمة المراقبة، قبل أي حجب.</span></a>
+  <a href="files/alerts/events/auth.log" download><b>alerts/events/</b><span>الأحداث الخام: الدخول، والوكيل، وحماية الأجهزة، وبوابة البريد، ونظام الحجوزات.</span></a>
+  <a href="files/alerts/sahir_triage.md" target="_blank"><b>alerts/sahir_triage.md</b><span>فرز «ساهر» للتنبيهات بعد حجبها: مخرج مسجَّل.</span></a>
+  <a href="files/alerts/triage_sheet.csv" download><b>alerts/triage_sheet.csv</b><span>ورقة الفرز التي تملؤها.</span></a>
+  <a href="files/reference/known_networks.csv" download><b>reference/</b><span>الشبكات المعروفة، والخدمات المعتمدة، والبرامج المعروفة، وتقويم التغييرات، وجدول الورديات.</span></a>
+  <a href="files/kit/redaction_rules.sed" download><b>kit/</b><span>الماسح <code>scan_secrets.sh</code>، وأداة الحجب <code>redact.sh</code> وقواعدها الأولية.</span></a>
+</div>
+<p class="small">سياسة الذكاء الاصطناعي: <b>المساعد كاملًا</b>، على المواد المنقَّحة وحدها. الأوامر من مجلد <code>labs</code> في نسخة المقرر على جهازك، في طرفية <span class="en">bash</span>. أنشئ أولًا مجلدًا لعملك: <code>mkdir -p work</code>. كل الملفات اصطناعية.</p>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · شغّل الماسح على التنبيهات الخام واقرأ ما وجده <span class="min">6 دقائق</span></h3>
+  <p>قبل أن يرى المساعد أي شيء، اعرف ما في الملف. الماسح يعدّ لكل نوع من الأسرار والبيانات الشخصية ما وجده.</p>
+  <pre class="code"><code>bash files/kit/scan_secrets.sh files/alerts/alerts_raw.jsonl</code></pre>
+  <p>اكتب في ورقة جانبية: كم سرًّا، ومن أي الأنواع، وكم بيانًا شخصيًا. هذا ما كان سيدخل المساعد لو لصقت الملف كما هو.</p>
+</div>
+
+<div class="step">
+  <h3>2 · طبّق قواعد الحجب وأضف القاعدتين الناقصتين والتعديل اليدوي <span class="min">12 دقيقة</span></h3>
+  <p>انسخ القواعد الأولية إلى مجلد عملك، وطبّقها، ثم افحص الناتج.</p>
+  <pre class="code"><code>cp files/kit/redaction_rules.sed work/my_rules.sed
+bash files/kit/redact.sh files/alerts/alerts_raw.jsonl work/alerts_redacted.jsonl work/my_rules.sed &gt; work/redaction_record.csv
+bash files/kit/scan_secrets.sh work/alerts_redacted.jsonl</code></pre>
+  <p>الماسح سيجد نوعين لم تحجبهما القواعد الأولية. اكتب في آخر <code>work/my_rules.sed</code> قاعدة لكل نوع بصيغة القواعد التي فوقها، وأعد الأمرين الأخيرين حتى يقول الماسح <code>total,0</code>.</p>
+  <div class="callout warn"><b>الماسح النظيف لا يعني ملفًا نظيفًا.</b> اقرأ حقل <code>summary_ar</code> في الملف المنقَّح بنفسك: في أحد التنبيهات اسم نزيل داخل جملة، ولا يراه أي نمط. أضف له قاعدة يدوية.</div>
+  <pre class="code"><code>grep -o '"summary_ar": "[^"]*"' work/alerts_redacted.jsonl</code></pre>
+</div>
+
+<div class="step">
+  <h3>3 · تحقق من حكم «ساهر» في كل تنبيه واكتب سطر الدليل <span class="min">20 دقيقة</span></h3>
+  <p>اقرأ <code>sahir_triage.md</code>، ثم انسخ <code>triage_sheet.csv</code> إلى <code>work/</code> واملأ لكل تنبيه: حكمك (<code>TP</code> حقيقي يُصعَّد، <code>BN</code> حميد يُغلق)، وملف الحدث، ورقم السطر، وما يقوله السطر. ابحث في الأحداث الخام بالحساب أو العنوان أو اسم العملية:</p>
+  <pre class="code"><code>grep -n 'acct=u1310' files/alerts/events/auth.log
+grep -n '198.51.100.24' files/reference/*.csv</code></pre>
+  <p>يمكنك أن تطلب من المساعد أمر البحث، لا الحكم. أعطه التنبيه من الملف المنقَّح وحده:</p>
+  <div class="prompt" data-tool="مساعد عام الأغراض">أنت تساعد محلل عمليات. هذا تنبيه منقَّح: <span class="ph">سطر التنبيه من alerts_redacted.jsonl</span>. لا تحكم عليه. اقترح أمر grep واحدًا على الملف <span class="ph">اسم ملف الحدث</span> يُظهر السطر الذي يثبت أن التنبيه حقيقي أو ينفيه، وقل ما يجب أن أراه في ذلك السطر.</div>
+  <p class="small">حكم بلا سطر لا يدخل الورقة. وإن ذكر «ساهر» حقلًا فابحث عنه: هل هو موجود في أي حدث خام؟</p>
+</div>
+
+<div class="step">
+  <h3>4 · ارصد التعليمة المحقونة واكتب ما لا يُسمح للمساعد بفعله <span class="min">6 دقائق</span></h3>
+  <p>في أحد الأحداث الخام نص موجَّه إلى المساعد لا إلى الإنسان. جده، واكتب <code>yes</code> في عمود <code>injection</code> للتنبيه الذي يحمله، وتحقق مما يدّعيه من تقويم التغييرات.</p>
+  <pre class="code"><code>grep -n -i 'analyst\|classify\|ignore' files/alerts/events/*.log
+grep -n 'CHG-' files/reference/change_calendar.csv</code></pre>
+  <p>ثم اكتب في سطر واحد تحت الورقة: ما الذي لا يُسمح لـ«ساهر» أن يفعله وحده في هذه الوردية؟</p>
+</div>
+
+<div class="step">
+  <h3>5 · قارن ورقتك مع زميل وأعد فحص ما ستسلّمه <span class="min">6 دقائق</span></h3>
+  <p>قارنا الأحكام التي اختلفتما فيها، وسطر الدليل لكل منها. ثم افحص كل ملف كتبته وستسلّمه: لا تسليم وفيه سر لم يُحجب.</p>
+  <pre class="code"><code>bash files/kit/scan_secrets.sh work/triage_sheet.csv
+bash files/kit/scan_secrets.sh work/alerts_redacted.jsonl</code></pre>
+</div>
+
+<div class="step stretch">
+  <h3>✱ مهمة إضافية</h3>
+  <p>اقرأ صفحة أداة لتشغيل النماذج محليًا، مثل <span class="en">Ollama</span> أو <span class="en">llama.cpp</span>، دون أن تنزّل نموذجًا. اكتب ما يتغير في قواعد الحجب لو عمل المساعد على خادم المجموعة، وما لا يتغير: هل يبقى سبب لحجب الأسرار عن نموذج لا يغادر الشبكة؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم حكمًا من أحكام «ساهر» العشرين خالف السطر الخام، وأي حكم صحيح بُني على حقل غير موجود؟</li>
+  <li>لماذا بقيت التعليمة المحقونة في الملف المنقَّح، وما الذي يمنعها من أن تغلق التنبيه؟</li>
+  <li>أي نوعين من الأسرار فاتا القواعد الأولية، وأي بيان شخصي لا يراه الماسح؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الحل: <code>labs/solutions/D1_1.sh</code> (يطبع <code>PASS lab 1.1</code>)، والورقة المرجعية <code>labs/solutions/triage_sheet_reference.csv</code>، وأسطر الأدلة في <code>key_evidence.tsv</code>، والقواعد المرجعية في <code>redaction_rules_reference.sed</code>.</li>
+    <li>الماسح على الملف الخام: 45 قيمة، منها ثمانية أسرار من ستة أنواع (كلمتا مرور، ونص اتصال، ورمز وصول، ومفتاح واجهة، وملف تعريف جلسة، ورمزان في روابط). القواعد الأولية تترك 4: رمزي الرابطين ورقمي الهوية. اسم النزيل في نص التنبيه A-07 لا يراه الماسح.</li>
+    <li>الحقيقة: 11 حقيقيًا و9 حميدة. أخطأ «ساهر» في أربعة: A-02 (العنوان الثاني مخرج الشبكة الافتراضية للمجموعة، حميد)، وA-07 (مهمة التدقيق الليلي نفسها صدّرت 4790 و4803 و4797 سجلًا في الليالي الثلاث السابقة، حميد)، وA-08 (دخول تفاعلي لحساب خدمة، حقيقي)، وA-14 (أطاع التعليمة المحقونة، حقيقي). وحكمه في A-12 صحيح لكنه استند إلى حقل <code>geo_block</code> غير موجود في أي سجل.</li>
+    <li>التعليمة في حقل <code>ua</code> لسطرين في <code>proxy.log</code> من العنوان 203.0.113.140، وتدّعي تغييرًا رقمه CHG-0000 لا وجود له. العنوان نفسه مصدر A-17 قبل ست دقائق. التعليمة ليست سرًّا فلا يحجبها أي ماسح: ما يحمي هو أن المساعد يقترح ولا يغلق تنبيهًا ولا يغيّر حكمًا.</li>
+    <li>من يكتب حكمًا بلا رقم سطر لا تُحسب له الخانة. رقم السطر الصحيح يتغير إن فتح المشارك الملف بأداة تحذف الأسطر الفارغة: <code>grep -n</code> هو المرجع.</li>
+    <li>فرز «ساهر» مكتوب باليد. لم يُشغَّل نموذج حقيقي، والأمر المكتوب في الخطوة 3 لم يُجرَّب على نموذج في بناء المقرر: جرّبه على مساعد القاعة قبل الدفعة.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><span></span><a href="D1_2_runbook.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي للعاملين في الأمن وعمليات تقنية المعلومات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع b5d0b70</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T20:29:21Z","version":"2027.1.0","commit":"b5d0b70"},"course":{"id":"use-pro-212","code":"USE-PRO-212","title":"الذكاء الاصطناعي للعاملين في الأمن وعمليات تقنية المعلومات","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-pro-212/","repo":"SDAIAAcademy/use-pro-212","home":"../index.html"},"lab":{"id":"1.1","title":"فرز عشرين تنبيهًا بعد حجب البيانات الحساسة","summary":"تحجب الأسرار والبيانات الشخصية من عشرين تنبيهًا خامًا، ثم تتحقق من فرز «ساهر» حكمًا حكمًا في الأحداث الخام، وتخرج بورقة فرز بأسطر الأدلة وسجل حجب والتعليمة المحقونة مرصودة.","minutes":50,"day":1,"unit":"اليوم 1","session":1,"deck":"../slides/day1.html#lab-1-1","prev":null,"next":"D1_2_runbook.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
