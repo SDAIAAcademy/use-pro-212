@@ -68,4 +68,6 @@ expect "proxy lines that carry the instruction" "$(grep -c 'NOTE TO THE AI ANALY
 expect "CHG-0000 in the change calendar" "$(grep -c 'CHG-0000' "$FILES/reference/change_calendar.csv" || true)" 0
 expect "the instruction survives redaction (it is not a secret)" "$(grep -c 'NOTE TO THE AI ANALYST' redacted.jsonl)" 1
 expect "reference sheet flags one injection" "$(grep -c ',yes$' "$SOL/triage_sheet_reference.csv")" 1
+bash "$KIT/scan_secrets.sh" "$SOL/triage_sheet_reference.csv" > ref_scan.csv || fail "the reference triage sheet holds a value the scanner finds"
+ok "the reference triage sheet passes the scanner"
 echo "PASS lab 1.1"

@@ -350,7 +350,7 @@
           "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf"
         },
         {
-          "title": "سدايا: إرشادات التزييف العميق",
+          "title": "سدايا: مبادئ التزييف العميق",
           "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf"
         }
       ]
@@ -407,6 +407,10 @@
         {
           "title": "ShellCheck wiki: SC2086",
           "url": "https://www.shellcheck.net/wiki/SC2086"
+        },
+        {
+          "title": "ShellCheck wiki: SC2115",
+          "url": "https://www.shellcheck.net/wiki/SC2115"
         },
         {
           "title": "ShellCheck (المستودع)",

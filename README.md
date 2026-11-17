@@ -74,7 +74,7 @@ AI for Security and IT Operations Staff
 
 - [الهيئة الوطنية للأمن السيبراني: الضوابط الأساسية للأمن السيبراني](https://nca.gov.sa/ar/regulatory-documents/controls-list/ecc/)
 - [سدايا: نظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
-- [سدايا: إرشادات التزييف العميق](https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf)
+- [سدايا: مبادئ التزييف العميق](https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf)
 
 ### الحقن والأخطاء في مخرجات المساعدات
 
@@ -94,6 +94,7 @@ AI for Security and IT Operations Staff
 
 - [ShellCheck wiki: SC2094](https://www.shellcheck.net/wiki/SC2094)
 - [ShellCheck wiki: SC2086](https://www.shellcheck.net/wiki/SC2086)
+- [ShellCheck wiki: SC2115](https://www.shellcheck.net/wiki/SC2115)
 - [ShellCheck (المستودع)](https://github.com/koalaman/shellcheck)
 - [GNU Bash Reference Manual: The Set Builtin](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
 - [PSScriptAnalyzer (المستودع)](https://github.com/PowerShell/PSScriptAnalyzer)
@@ -111,7 +112,7 @@ AI for Security and IT Operations Staff
 - الضوابط الأساسية للأمن السيبراني الصادرة عن الهيئة الوطنية للأمن السيبراني: https://nca.gov.sa/ar/regulatory-documents/controls-list/ecc/
 - مسودة إرشادات الأمن السيبراني للذكاء الاصطناعي الصادرة عن الهيئة الوطنية للأمن السيبراني: لم نجد لها عنوانًا رسميًا في قوائم الهيئة عند بناء المقرر، فلا يُبنى على محتواها شيء في الشرائح. يُتحقق من حالتها في موقع الهيئة https://nca.gov.sa قبل كل دفعة.
 - نظام حماية البيانات الشخصية: https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf
-- إرشادات التزييف العميق الصادرة عن سدايا: https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf
+- مبادئ التزييف العميق الصادرة عن سدايا: https://sdaia.gov.sa/ar/SDAIA/about/Files/File0001.pdf
 
 ## كيف نُظّم المقرر
 

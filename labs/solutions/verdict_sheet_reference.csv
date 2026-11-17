@@ -1,5 +1,5 @@
 item,sahir_verdict,my_verdict,evidence,out_of_band_channel,out_of_band_result,report_ticket
-E1,LEGIT,MAL,From: it-ops@sura-hotels.example نطاق شبيه بشرطة ليس نطاق المجموعة؛ الرابط إلى vpn.sura-hotels.example؛ نجاح الفحوص الثلاثة يخص النطاق الشبيه نفسه,تحويلة إدارة العمليات 3001 وتقويم التغييرات,لم ترسل الإدارة شيئًا؛ CHG-1193 على الخادم ولا يطلب شيئًا من الموظفين,نعم
+E1,LEGIT,MAL,النطاق في From هو sura-hotels.example: شبيه بشرطة ليس نطاق المجموعة؛ الرابط إلى vpn.sura-hotels.example؛ نجاح الفحوص الثلاثة يخص النطاق الشبيه نفسه,تحويلة إدارة العمليات 3001 وتقويم التغييرات,لم ترسل الإدارة شيئًا؛ CHG-1193 على الخادم ولا يطلب شيئًا من الموظفين,نعم
 E2,LEGIT,LEGIT,المرسل nuzul-systems.example في approved_services.csv؛ الفحوص ناجحة؛ CHG-1190 في change_calendar.csv,تقويم التغييرات وبوابة الدعم من المفضلة,التغيير مسجَّل باسم كامل الحكيم,لا
 E3,MAL,MAL,Reply-To: rawabi-linen-finance.example يخالف From؛ dmarc=fail؛ Return-Path من fastmail-relay.example,رقم المورّد في الدليل لا الرقم الذي في الرسالة,المورّد لم يغيّر حسابه,نعم
 E4,MAL,MAL,From: mailbox.example عنوان شخصي؛ يطلب تسجيل رقم غير مسجَّل في التحقق الثنائي؛ الفحوص الناجحة تخص مزوّد البريد العام,تحويلة 2001 أو الجوال المسجَّل في الدليل,المدير المالي لم يطلب شيئًا,نعم مع C1

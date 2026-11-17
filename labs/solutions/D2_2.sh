@@ -52,4 +52,6 @@ expect "V1: the address it wants opened is the source of alerts A-14 and A-17" "
 expect "V1: a change for it in the calendar" "$(grep -c -i '3389\|firewall' "$R/change_calendar.csv" || true)" 0
 expect "items in the verdict sheet" "$(tail -n +2 "$M/verdict_sheet.csv" | wc -l | tr -d ' ')" 8
 expect "rows of the reference verdict sheet" "$(tail -n +2 "$SOL/verdict_sheet_reference.csv" | wc -l | tr -d ' ')" 8
+bash "$KIT/scan_secrets.sh" "$SOL/verdict_sheet_reference.csv" > ref_scan.csv || fail "the reference verdict sheet holds a value the scanner finds"
+ok "the reference verdict sheet passes the scanner"
 echo "PASS lab 2.2"
