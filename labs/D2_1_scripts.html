@@ -1,37 +1,95 @@
 <article class="lab" data-lab="2.1">
-  <div class="box goal">
-    <h3>الهدف</h3>
-    <p>REPLACE: في النهاية يستطيع المشاركون …</p>
-  </div>
-
-  <h2>ما تحتاجه</h2>
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
   <ul>
-    <li>REPLACE: الملفات والأداة والحساب التي يستخدمها المختبر</li>
+    <li>سجل مراجعة للبرامج الأربعة: ما توقعته، وما قاله الفحص الساكن، وما فعله التشغيل الجاف، وحكمك.</li>
+    <li>برنامج مصحَّح يجتاز الفحص الساكن دون تحذير، ويجتاز التشغيل الجاف دون أن يفقد ملفًا محميًا.</li>
   </ul>
+</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الأولى <span class="min">15 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-    <div class="prompt" data-tool="أداة تشغيل النماذج محليًا">REPLACE: الأمر الذي ينسخه المشاركون، والأجزاء التي يغيّرونها <span class="ph">ملوّنة</span></div>
-  </div>
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/scripts/drop_hotel_sessions.sh" target="_blank"><b>scripts/drop_hotel_sessions.sh</b><span>يخرج كل جلسات فندق واحد من فهرس الجلسات.</span></a>
+  <a href="files/scripts/purge_backups.sh" target="_blank"><b>scripts/purge_backups.sh</b><span>يحذف النسخ الاحتياطية الأقدم من 30 يومًا.</span></a>
+  <a href="files/scripts/lock_stale_accounts.sh" target="_blank"><b>scripts/lock_stale_accounts.sh</b><span>يقفل حسابات الموظفين التي لم تدخل منذ 90 يومًا.</span></a>
+  <a href="files/scripts/rotate_logs.sh" target="_blank"><b>scripts/rotate_logs.sh</b><span>يضغط السجلات المدوَّرة لنظام الحجوزات.</span></a>
+  <a href="files/scripts/tutor_explanation_purge.md" target="_blank"><b>scripts/tutor_explanation_purge.md</b><span>شرح مسجَّل من المعلّم لسطر في أحد البرامج.</span></a>
+  <a href="files/kit/dryrun.sh" download><b>kit/dryrun.sh</b><span>التشغيل الجاف: يشغّل البرنامج في نسخة مؤقتة من الخادم ويقول ما حذف وما غيّر.</span></a>
+  <a href="files/kit/lint.sh" download><b>kit/lint.sh</b><span>الفحص الساكن بـ <span class="en">ShellCheck</span>، أو عبر <span class="en">uv</span> إن لم يكن مثبتًا.</span></a>
+</div>
+<p class="small">سياسة الذكاء الاصطناعي: <b>المساعد معلّم</b>. يشرح الأوامر ولا يحكم على البرامج ولا يسمّي أخطاءها. الحكم لك. لا تشغّل أي برنامج من الأربعة إلا عبر <code>dryrun.sh</code>. الأوامر من مجلد <code>labs</code>.</p>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الثانية <span class="min">10 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-  </div>
+<h2>الخطوات</h2>
 
-  <div class="step stretch">
-    <h3>✱ إضافي</h3>
-    <p>REPLACE: توسعة لمن ينهي مبكرًا</p>
-  </div>
+<div class="step">
+  <h3>1 · اقرأ البرامج الأربعة واكتب ما تتوقع أن يفعله كل منها <span class="min">10 دقائق</span></h3>
+  <p>اقرأ كل برنامج سطرًا سطرًا قبل أي أداة. اكتب لكل برنامج: ما الملفات التي يكتب فيها أو يحذفها؟ ماذا يحدث إن شُغّل دون معطيات؟ أي سطر لو أخطأ لا يمكن التراجع عنه؟</p>
+</div>
 
-  <h2>أسئلة تحقق</h2>
-  <ol class="checks">
-    <li>REPLACE: سؤال يبيّن أن المختبر نجح</li>
-  </ol>
+<div class="step">
+  <h3>2 · شغّل الفحص الساكن واسأل المعلّم عن كل تحذير <span class="min">10 دقائق</span></h3>
+  <pre class="code"><code>bash files/kit/lint.sh files/scripts/drop_hotel_sessions.sh
+bash files/kit/lint.sh files/scripts/purge_backups.sh
+bash files/kit/lint.sh files/scripts/lock_stale_accounts.sh
+bash files/kit/lint.sh files/scripts/rotate_logs.sh</code></pre>
+  <p>لكل تحذير رمز مثل <code>SC2086</code> وصفحة في موقع <span class="en">ShellCheck</span>. اسأل المعلّم عن معناه:</p>
+  <div class="prompt" data-tool="مساعد معلّم">أنت معلّم أوامر الطرفية. اشرح ما يفعله هذا السطر حرفًا حرفًا، وما يفعله لو كان المتغير فارغًا. لا تقل هل البرنامج صحيح ولا تقترح تصحيحًا. السطر: <span class="ph">السطر من البرنامج</span></div>
+  <div class="callout warn"><b>برنامج بلا تحذير ليس برنامجًا آمنًا.</b> اكتب أي البرامج خرج نظيفًا من الفحص، وارجع إلى ما توقعته له في الخطوة 1.</div>
+</div>
 
-  <details class="instructor">
-    <summary>للمدرّب</summary>
-    <p>REPLACE: مفتاح الإجابة والفخاخ والأخطاء الشائعة</p>
-  </details>
+<div class="step">
+  <h3>3 · شغّل كل برنامج تشغيلًا جافًا واقرأ ما حُذف وما تغيّر <span class="min">12 دقيقة</span></h3>
+  <p>كل تشغيل يبني نسخة جديدة من الخادم في مجلد مؤقت، فيشغّل البرنامج فيها ويطبع الملفات المحذوفة والمنشأة والمتغيرة، وأي ملف محمي فُقد، والأوامر التي كان سيستدعيها.</p>
+  <pre class="code"><code>bash files/kit/dryrun.sh files/scripts/drop_hotel_sessions.sh h03
+bash files/kit/dryrun.sh files/scripts/purge_backups.sh
+bash files/kit/dryrun.sh files/scripts/lock_stale_accounts.sh
+bash files/kit/dryrun.sh files/scripts/rotate_logs.sh</code></pre>
+  <p>اقرأ <code>tutor_explanation_purge.md</code> ثم قائمة «الملفات المحذوفة» في تشغيل <code>purge_backups.sh</code>. أيهما تصدّق؟</p>
+</div>
+
+<div class="step">
+  <h3>4 · صحّح البرنامج المدمر حتى يجتاز الفحص والتشغيل الجاف <span class="min">12 دقيقة</span></h3>
+  <p>انسخ <code>drop_hotel_sessions.sh</code> إلى مجلد عملك وصحّحه: لا يقرأ ملفًا ويكتب فيه في الأمر نفسه، ويتوقف إن لم يُعطَ رمز فندق صحيح. ثم أعد الفحصين حتى يخرج الفحص الساكن دون تحذير، ويفقد التشغيل الجاف أسطر فندق <code>h03</code> وحدها.</p>
+  <pre class="code"><code>mkdir -p work
+cp files/scripts/drop_hotel_sessions.sh work/drop_hotel_sessions.sh
+bash files/kit/lint.sh work/drop_hotel_sessions.sh
+bash files/kit/dryrun.sh work/drop_hotel_sessions.sh h03
+bash files/kit/dryrun.sh work/drop_hotel_sessions.sh</code></pre>
+</div>
+
+<div class="step">
+  <h3>5 · اكتب سجل المراجعة بحكم واحد لكل برنامج <span class="min">6 دقائق</span></h3>
+  <table>
+    <tr><th>البرنامج</th><th>الفحص الساكن</th><th>التشغيل الجاف</th><th>الحكم: يُشغَّل، أو يُصحَّح، أو يُرفض</th></tr>
+    <tr><td><code>drop_hotel_sessions.sh</code></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td><code>purge_backups.sh</code></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td><code>lock_stale_accounts.sh</code></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td><code>rotate_logs.sh</code></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  </table>
+</div>
+
+<div class="step stretch">
+  <h3>✱ مهمة إضافية</h3>
+  <p>صحّح <code>purge_backups.sh</code> أيضًا حتى لا يحذف إلا النسخ الشهرية القديمة، واكتب لماذا لم يره الفحص الساكن: ما الذي يفحصه <span class="en">ShellCheck</span>، وما الذي لا يعرفه عن ترتيب خيارات <code>find</code>؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم سطرًا بقي في فهرس الجلسات بعد التشغيل الجاف للبرنامج الأول كما ولّده المساعد، ولماذا؟</li>
+  <li>أي برنامج خرج نظيفًا من الفحص الساكن وحذف مع ذلك ملفين محميين؟</li>
+  <li>ماذا يفعل برنامجك المصحَّح إن شُغّل دون رمز فندق؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الحل: <code>labs/solutions/D2_1.sh</code> (يطبع <code>PASS lab 2.1</code>)، والبرنامجان المصحَّحان <code>drop_hotel_sessions_fixed.sh</code> و<code>purge_backups_fixed.sh</code>.</li>
+    <li><code>drop_hotel_sessions.sh</code>: الفحص يعطي <code>SC2094</code>، فالسطر <code>grep -v … $INDEX &gt; $INDEX</code> يفرّغ الملف قبل أن يقرأه. التشغيل الجاف: فهرس الفنادق التسعة من 720 بايت إلى 0. ودون معطى يطابق <code>^</code> كل سطر. المصحَّح يكتب إلى ملف جديد ثم ينقله، فيبقى 32 سطرًا من 36 (720 إلى 640 بايت)، ويتوقف دون رمز فندق.</li>
+    <li><code>purge_backups.sh</code>: الفحص الساكن نظيف. <code>find</code> ينفّذ <code>-delete</code> قبل الشرطين لأنه يقرأ التعبير من اليسار، فيحذف خمسة ملفات، منها النسخة الليلية <code>pms-latest.tar.gz</code> وملف قاعدة البيانات <code>db-latest.dump</code>. شرح المعلّم المسجَّل يقول العكس: هذا هو الدرس، فالمعلّم يشرح ولا يحكم، والتشغيل الجاف هو الحكم.</li>
+    <li><code>lock_stale_accounts.sh</code>: تحذيرات اقتباس (<code>SC2086</code>) ولا سطر مدمر. يقفل u1203 وu1344 وu2290 ويتخطى حسابات الخدمة؛ الأمر <code>usermod</code> بديل يسجل الاستدعاء ولا يغيّر حسابًا. الحكم: يُصحَّح الاقتباس ثم يُشغَّل.</li>
+    <li><code>rotate_logs.sh</code>: نظيف، ويضغط السجلين المدوَّرين ولا يمس سجل التدقيق. الحكم: يُشغَّل بعد الاعتماد.</li>
+    <li>من لا يملك <span class="en">ShellCheck</span> ولا <span class="en">uv</span>: افتح <span class="en">shellcheck.net</span> والصق البرنامج، فالبرامج الأربعة اصطناعية لا سر فيها. <span class="en">PSScriptAnalyzer</span> هو المقابل لبرامج <span class="en">PowerShell</span>، ولم يُشغَّل في بناء المقرر.</li>
+    <li>شرح المعلّم مكتوب باليد، والأمر المكتوب في الخطوة 2 لم يُجرَّب على نموذج في بناء المقرر.</li>
+  </ul>
+</details>
 </article>

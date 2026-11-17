@@ -1,37 +1,82 @@
 <article class="lab" data-lab="2.2">
-  <div class="box goal">
-    <h3>الهدف</h3>
-    <p>REPLACE: في النهاية يستطيع المشاركون …</p>
-  </div>
-
-  <h2>ما تحتاجه</h2>
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
   <ul>
-    <li>REPLACE: الملفات والأداة والحساب التي يستخدمها المختبر</li>
+    <li>ورقة أحكام لثمانية عناصر (ست رسائل ومكالمة ومقطع): حكمك، والإشارة التي بنيته عليها، والقناة المستقلة ونتيجتها.</li>
+    <li>بلاغان على القالب: واحد عن رسالة، وواحد عن المكالمة أو المقطع.</li>
   </ul>
+</div>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الأولى <span class="min">15 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-    <div class="prompt" data-tool="أداة تشغيل النماذج محليًا">REPLACE: الأمر الذي ينسخه المشاركون، والأجزاء التي يغيّرونها <span class="ph">ملوّنة</span></div>
-  </div>
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/messages/E1.eml" download><b>messages/E1.eml إلى E6.eml</b><span>ست رسائل محفوظة بترويساتها كاملة.</span></a>
+  <a href="files/messages/sahir_message_analysis.md" target="_blank"><b>messages/sahir_message_analysis.md</b><span>تحليل «ساهر» للرسائل الست: مخرج مسجَّل.</span></a>
+  <a href="files/messages/call_C1_transcript.md" target="_blank"><b>messages/call_C1_transcript.md</b><span>نص المكالمة C1 بصوت المدير المالي المستنسخ، وسجلها <code>call_C1_record.txt</code>.</span></a>
+  <a href="files/messages/video_V1_card.md" target="_blank"><b>messages/video_V1_card.md</b><span>بطاقة مقطع الفيديو V1.</span></a>
+  <a href="files/messages/verification_procedure.md" target="_blank"><b>messages/verification_procedure.md</b><span>إجراء التحقق عبر قناة مستقلة في المجموعة.</span></a>
+  <a href="files/messages/verdict_sheet.csv" download><b>messages/verdict_sheet.csv</b><span>ورقة الأحكام التي تملؤها.</span></a>
+  <a href="files/messages/ticket_template.md" download><b>messages/ticket_template.md</b><span>قالب البلاغ.</span></a>
+  <a href="files/reference/directory.csv" download><b>reference/directory.csv</b><span>الدليل: التحويلات والجوالات المسجَّلة وأرقام الموردين.</span></a>
+</div>
+<p class="small">سياسة الذكاء الاصطناعي: <b>المساعد كاملًا</b>. لا تفتح أي رابط في الرسائل ولا تتصل بأي رقم فيها: كلها اصطناعية، والتحقق من الدليل وحده. الأوامر من مجلد <code>labs</code>. لا ملف صوتي ولا ملف فيديو في المقرر: النص والسجل والبطاقة تكفي للحكم.</p>
 
-  <div class="step">
-    <h3>REPLACE: الخطوة الثانية <span class="min">10 د</span></h3>
-    <p>REPLACE: ما يفعله المشارك ولماذا، في جملتين</p>
-  </div>
+<h2>الخطوات</h2>
 
-  <div class="step stretch">
-    <h3>✱ إضافي</h3>
-    <p>REPLACE: توسعة لمن ينهي مبكرًا</p>
-  </div>
+<div class="step">
+  <h3>1 · اقرأ تحليل «ساهر» ثم ترويسات الرسائل الست وروابطها <span class="min">14 دقيقة</span></h3>
+  <p>أداة الترويسات تطبع ما يُبنى عليه الحكم: من يدّعي أنه المرسل، وأين يذهب الرد، وما فحصه خادم الاستقبال، وكل نطاق في الروابط، وأي نص مخفي.</p>
+  <pre class="code"><code>for m in files/messages/E*.eml; do bash files/kit/headers.sh "$m"; done</code></pre>
+  <p>قارن كل نطاق بنطاق المجموعة <code>surahotels.example</code> وبالخدمات المعتمدة في <code>reference/approved_services.csv</code>، حرفًا حرفًا.</p>
+</div>
 
-  <h2>أسئلة تحقق</h2>
-  <ol class="checks">
-    <li>REPLACE: سؤال يبيّن أن المختبر نجح</li>
-  </ol>
+<div class="step">
+  <h3>2 · احكم على كل رسالة بإشارة من الترويسات لا من اللغة <span class="min">8 دقائق</span></h3>
+  <p>انسخ <code>verdict_sheet.csv</code> إلى مجلد عملك. لكل رسالة: <code>MAL</code> أو <code>LEGIT</code>، وفي عمود <code>evidence</code> السطر الذي بنيت عليه. يمكنك أن تطلب من المساعد قراءة الترويسات معك:</p>
+  <div class="prompt" data-tool="مساعد عام الأغراض">هذه ترويسات رسالة: <span class="ph">مخرج headers.sh</span>. نطاق جهتنا هو surahotels.example. لا تحكم من لغة الرسالة ولا من أسلوبها. قل لي: أي نطاق يخص كل فحص من فحوص SPF وDKIM وDMARC؟ هل يختلف عنوان الرد عن المرسل؟ هل في الروابط نطاق ليس نطاقنا؟</div>
+  <div class="callout warn"><b>فحوص ناجحة لا تعني مرسلًا موثوقًا.</b> اقرأ <code>header.from</code>: الفحص ينجح لصاحب النطاق، وقد يكون صاحبه المحتال.</div>
+</div>
 
-  <details class="instructor">
-    <summary>للمدرّب</summary>
-    <p>REPLACE: مفتاح الإجابة والفخاخ والأخطاء الشائعة</p>
-  </details>
+<div class="step">
+  <h3>3 · اقرأ نص المكالمة وسجلها وبطاقة المقطع <span class="min">8 دقائق</span></h3>
+  <p>يقرأ المدرّب المكالمة أو يقرؤها مشاركان. ثم اقرأ السجل والبطاقة. اكتب لكل منهما ما يطلبه المتصل، وأي طريق تحقق رفضه، ورقمه أو حسابه، وهل هو في الدليل أو في السجلات.</p>
+  <pre class="code"><code>cat files/messages/call_C1_record.txt
+grep -n '0142\|Jamal' files/reference/directory.csv
+grep -n '203.0.113.140' files/reference/*.csv</code></pre>
+  <p class="small">الصوت المطابق والوجه المطابق ليسا دليل هوية. الدليل هو القناة.</p>
+</div>
+
+<div class="step">
+  <h3>4 · اكتب القناة المستقلة لكل عنصر ثم افتح نتائج التحقق <span class="min">10 دقائق</span></h3>
+  <p>لكل عنصر من الثمانية اكتب في <code>out_of_band_channel</code> القناة التي ستتحقق بها ومصدرها: تحويلة أو جوال من <code>directory.csv</code>، أو سطر في <code>change_calendar.csv</code>. رقم أو رابط أو عنوان من الرسالة نفسها ليس قناة مستقلة. بعد أن تكتب القنوات الثماني، افتح <code>callback_results.md</code> واملأ <code>out_of_band_result</code>.</p>
+</div>
+
+<div class="step">
+  <h3>5 · اكتب بلاغين بالقالب وأكمل ورقة الأحكام <span class="min">10 دقائق</span></h3>
+  <p>اكتب بلاغًا عن رسالة وبلاغًا عن المكالمة أو المقطع على <code>ticket_template.md</code>، واكتب <code>نعم</code> أو <code>لا</code> في عمود <code>report_ticket</code> لكل عنصر. ثم افحص ما ستسلّمه:</p>
+  <pre class="code"><code>bash files/kit/scan_secrets.sh work/verdict_sheet.csv</code></pre>
+</div>
+
+<div class="step stretch">
+  <h3>✱ مهمة إضافية</h3>
+  <p>في الرسالة E6 نص مخفي موجَّه إلى مساعد يلخص البريد. اكتب قاعدة واحدة لذلك المساعد تمنع النص المخفي من أن يصير أمرًا: ما الذي يُسمح له أن يفعله بنص الرسالة، وما الذي لا يُسمح له أبدًا؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>أي رسالة نجحت فيها الفحوص الثلاثة وهي خبيثة، ولماذا نجحت؟</li>
+  <li>أي رسالة حكم عليها «ساهر» بأنها خبيثة بسبب أخطائها اللغوية، وما الذي يثبت أنها سليمة؟</li>
+  <li>ما الذي يربط الرسالة E4 بالمكالمة C1، وأي رقم تتصل به للتحقق؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الحل: <code>labs/solutions/D2_2.sh</code> (يطبع <code>PASS lab 2.2</code>)، والورقة المرجعية <code>labs/solutions/verdict_sheet_reference.csv</code>، والإشارات المتوقعة في <code>key_messages.tsv</code>.</li>
+    <li>أخطأ «ساهر» في ثلاث: E1 (نطاق شبيه <code>sura-hotels.example</code> بشرطة، والفحوص الثلاثة ناجحة للنطاق الشبيه نفسه، والرابط إلى <code>vpn.sura-hotels.example</code>: خبيثة)، وE5 (رسالة داخلية سليمة من الموارد البشرية بلغة ركيكة: سليمة)، وE6 (نطاق شبيه ونص مخفي بحجم <code>1px</code> يخاطب المساعد: خبيثة). وأصاب في E2 (المورّد، والتغيير CHG-1190 في التقويم) وE3 (عنوان رد مختلف وDMARC فاشل) وE4 (عنوان شخصي).</li>
+    <li>C1: رقم المتصل غير مسجَّل في الدليل، وهو الرقم نفسه الذي تطلب E4 تسجيله، والمتصل رفض ثلاث مرات كل طريق تحقق. المعاودة على التحويلة 2001 أو الجوال المسجَّل للمدير المالي. V1: حساب ضيف خارجي أُضيف في اليوم نفسه، ويطلب فتح المنفذ 3389 للعنوان 203.0.113.140، مصدر التنبيهين A-14 وA-17 في المختبر 1.1، دون طلب تغيير.</li>
+    <li>الخطأ الشائع: كتابة رقم الرسالة أو رابطها قناةً للتحقق. لا تُحسب الخانة. والخطأ الثاني: الحكم على E5 بأنها خبيثة لأخطائها اللغوية، وهو خطأ «ساهر» نفسه.</li>
+    <li>المكالمة والمقطع نص وبطاقة، لا ملف صوتي ولا ملف فيديو. إن أراد المدرّب أن يُسمع صوتًا فليُعدّه بأداة تسمح شروطها بالنشر، ولا يضعه في مستودع المقرر.</li>
+    <li>تحليل «ساهر» مكتوب باليد، والأمر المكتوب في الخطوة 2 لم يُجرَّب على نموذج في بناء المقرر.</li>
+  </ul>
+</details>
 </article>
